@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Southern Group of Companies</title>
+  <meta name="description" content="A diversified conglomerate spanning renewable energy, infrastructure, transport, and real estate across South India." />
+  <link rel="stylesheet" href="css/style.css?v=12" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVIGATION
+  ====================================================== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#home" class="logo">
+        <img src="logo.png.jpeg" alt="Southern Group of Companies" class="logo__img" />
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#home"       class="nav__a">Home</a>
+        <a href="#about"      class="nav__a">About</a>
+        <div class="drop" id="companyDrop">
+          <button class="nav__a drop__btn" id="companyDropBtn" aria-haspopup="true" aria-expanded="false">
+            Companies
+            <svg class="drop__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="drop__panel" role="menu">
+            <a href="sarnith.html" class="drop__link" role="menuitem">
+              <span class="drop__badge" style="--bc:#8b6914">SE</span>
+              <span class="drop__text">
+                <span class="drop__name">Sarnith Enterprises</span>
+                <span class="drop__meta">Real Estate · Construction · Trading</span>
+              </span>
+              <span class="drop__year">2015</span>
+            </a>
+            <a href="wind-power.html" class="drop__link" role="menuitem">
+              <span class="drop__badge" style="--bc:#2d7a5a">SWP</span>
+              <span class="drop__text">
+                <span class="drop__name">Southern Wind Power</span>
+                <span class="drop__meta">Renewable Energy · R&amp;D</span>
+              </span>
+              <span class="drop__year">2022</span>
+            </a>
+            <a href="transport.html" class="drop__link" role="menuitem">
+              <span class="drop__badge" style="--bc:#1e5f8a">ST</span>
+              <span class="drop__text">
+                <span class="drop__name">Southern Transport</span>
+                <span class="drop__meta">Land Transport · Logistics</span>
+              </span>
+              <span class="drop__year">2023</span>
+            </a>
+            <a href="solar-power.html" class="drop__link" role="menuitem">
+              <span class="drop__badge" style="--bc:#b85c20">SSP</span>
+              <span class="drop__text">
+                <span class="drop__name">Southern Solar Power</span>
+                <span class="drop__meta">Solar EPC · RECs · O&amp;M</span>
+              </span>
+              <span class="drop__year">2026</span>
+            </a>
+          </div>
+        </div>
+        <a href="#leadership" class="nav__a">Leadership</a>
+        <a href="#contact"    class="nav__a nav__a--cta">Contact Us</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="drawer" id="drawer">
+      <a href="#home"  class="nav__a">Home</a>
+      <a href="#about" class="nav__a">About</a>
+      <div class="drawer__grp">
+        <button class="nav__a drawer__grp-btn" id="drawerDropBtn">
+          Companies
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true" style="margin-left:4px">
+            <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="drawer__sub" id="drawerSub">
+          <a href="sarnith.html"     class="nav__a drawer__sub-a">Sarnith Enterprises India Pvt Ltd</a>
+          <a href="wind-power.html"  class="nav__a drawer__sub-a">Southern Wind Power India Pvt Ltd</a>
+          <a href="transport.html"   class="nav__a drawer__sub-a">Southern Transport India Pvt Ltd</a>
+          <a href="solar-power.html" class="nav__a drawer__sub-a">Southern Solar Power India Pvt Ltd</a>
+        </div>
+      </div>
+      <a href="#leadership" class="nav__a">Leadership</a>
+      <a href="#contact"    class="nav__a">Contact Us</a>
+    </div>
+  </header>
+
+
+  <!-- ======================================================
+       HERO
+  ====================================================== -->
+  <section class="hero" id="home">
+
+    <!-- Background layers -->
+    <div class="hero__bg-grid"  aria-hidden="true"></div>
+    <div class="hero__rings"    aria-hidden="true"></div>
+    <div class="hero__wm"       aria-hidden="true">SG</div>
+    <div class="hero__vlines"   aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- Main stage — centered -->
+    <div class="hero__stage">
+
+      <!-- Top rule + eyebrow -->
+      <div class="hero__pre fade-up">
+        <div class="hero__rule"></div>
+        <p class="hero__eyebrow">Est. 2015 &nbsp;&middot;&nbsp; Tamil Nadu &amp; Kerala &nbsp;&middot;&nbsp; Companies Act, 2013</p>
+        <div class="hero__rule"></div>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="hero__h1 fade-up">
+        <span class="h1-thin">Southern</span>
+        <span class="h1-italic">Group</span>
+        <span class="h1-thin">of Companies</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="hero__sub fade-up">
+        A South India conglomerate spanning renewable energy,<br />
+        infrastructure, logistics, and real estate.
+      </p>
+
+      <!-- CTAs -->
+      <div class="hero__btns fade-up">
+        <a href="#companies" class="btn btn--dark">Explore Our Companies</a>
+        <a href="#about"     class="btn btn--outline">Our Story</a>
+      </div>
+
+      <!-- Stats row -->
+      <div class="hero__stats fade-up">
+        <div class="hero__stat">
+          <span class="hero__stat-n" data-to="4">0</span>
+          <span class="hero__stat-l">Companies</span>
+        </div>
+        <div class="hero__stat-sep"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-n">2015</span>
+          <span class="hero__stat-l">Founded</span>
+        </div>
+        <div class="hero__stat-sep"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-n">2</span>
+          <span class="hero__stat-l">States</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Company strip — pinned to bottom -->
+    <div class="hero__cos-bar fade-up">
+      <div class="hero__cos-inner">
+        <a href="sarnith.html" class="hero__co">
+          <span class="hero__co-ab">SE</span>
+          <div class="hero__co-text">
+            <span class="hero__co-name">Sarnith Enterprises</span>
+            <span class="hero__co-sector">Real Estate · Construction</span>
+          </div>
+          <span class="hero__co-year">2015</span>
+        </a>
+        <div class="hero__cos-div"></div>
+        <a href="wind-power.html" class="hero__co">
+          <span class="hero__co-ab">SWP</span>
+          <div class="hero__co-text">
+            <span class="hero__co-name">Southern Wind Power</span>
+            <span class="hero__co-sector">Renewable Energy · R&amp;D</span>
+          </div>
+          <span class="hero__co-year">2022</span>
+        </a>
+        <div class="hero__cos-div"></div>
+        <a href="transport.html" class="hero__co">
+          <span class="hero__co-ab">ST</span>
+          <div class="hero__co-text">
+            <span class="hero__co-name">Southern Transport</span>
+            <span class="hero__co-sector">Land Transport · Logistics</span>
+          </div>
+          <span class="hero__co-year">2023</span>
+        </a>
+        <div class="hero__cos-div"></div>
+        <a href="solar-power.html" class="hero__co">
+          <span class="hero__co-ab">SSP</span>
+          <div class="hero__co-text">
+            <span class="hero__co-name">Southern Solar Power</span>
+            <span class="hero__co-sector">Solar EPC · RECs · O&amp;M</span>
+          </div>
+          <span class="hero__co-year">2026</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <div class="hero__scroll-track"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       ABOUT
+  ====================================================== -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="about__grid">
+
+        <div class="about__left">
+          <p class="eyebrow fade-up">Who We Are</p>
+          <h2 class="h2 fade-up">A Legacy Built on<br /><em>Vision &amp; Integrity</em></h2>
+          <p class="about__lead fade-up">
+            The Southern Group of Companies is a Chennai and Kerala-headquartered conglomerate founded on the principle that bold diversification creates enduring value.
+          </p>
+          <p class="about__body fade-up">
+            Since our founding in 2015, we have grown from a single real estate and construction enterprise into a multi-sector group with dedicated verticals in wind and solar energy, land transport logistics, and solar EPC. Every company in our portfolio is incorporated under the Companies Act, 2013, governed with transparency, and operated to the highest professional standards.
+          </p>
+          <div class="about__tags fade-up">
+            <span class="tag">Clean Energy</span>
+            <span class="tag">Infrastructure</span>
+            <span class="tag">Logistics</span>
+            <span class="tag">Sustainability</span>
+            <span class="tag">Tamil Nadu</span>
+            <span class="tag">Kerala</span>
+          </div>
+        </div>
+
+        <div class="about__right fade-up">
+          <div class="about__card">
+            <div class="about__monogram">SG</div>
+            <div class="about__divider"></div>
+            <p class="about__card-label">Southern Group of Companies</p>
+            <p class="about__card-year">Est. 2015</p>
+            <ul class="about__list">
+              <li>4 Private Limited Companies</li>
+              <li>Tamil Nadu &amp; Kerala Operations</li>
+              <li>Incorporated under Companies Act, 2013</li>
+              <li>Energy · Transport · Real Estate · Trading</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       CERTIFICATIONS STRIP
+  ====================================================== -->
+  <div class="certs-strip">
+    <div class="wrap">
+      <div class="certs-strip__inner fade-up">
+        <p class="certs-strip__label">Compliance &amp; Registrations</p>
+        <div class="certs-strip__divider"></div>
+        <div class="certs-strip__items">
+          <span class="cert-item"><span class="cert-item__check">&#10003;</span> Companies Act, 2013</span>
+          <span class="cert-item"><span class="cert-item__check">&#10003;</span> GST Registered</span>
+          <span class="cert-item"><span class="cert-item__check">&#10003;</span> MSME / Udyam Registered</span>
+          <span class="cert-item"><span class="cert-item__check">&#10003;</span> MCA21 Compliant</span>
+          <span class="cert-item"><span class="cert-item__check">&#10003;</span> PAN Registered</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ======================================================
+       INDIA OPPORTUNITY
+  ====================================================== -->
+  <section class="opportunity">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow fade-up">The Macro Picture</p>
+        <h2 class="h2 fade-up">Why Now Is the<br /><em>Right Time</em></h2>
+        <p class="section-desc fade-up">The Southern Group is positioned at the intersection of India's most dynamic growth sectors — renewable energy, logistics, and real estate.</p>
+      </div>
+      <div class="opp-grid">
+        <div class="opp-card fade-up">
+          <span class="opp-card__n">500 GW</span>
+          <h4>Renewable Energy Target</h4>
+          <p>India's MNRE has set a 500 GW non-fossil energy capacity target by 2030 — the world's largest clean energy expansion programme. Tamil Nadu leads all Indian states in wind energy installed capacity.</p>
+          <span class="opp-card__src">Source: MNRE, India</span>
+        </div>
+        <div class="opp-card fade-up">
+          <span class="opp-card__n">10%+</span>
+          <h4>Logistics Sector Growth</h4>
+          <p>India's logistics and supply chain sector is growing at over 10% CAGR, driven by manufacturing expansion, e-commerce, and infrastructure investment. South India is a key logistics hub for the subcontinent.</p>
+          <span class="opp-card__src">Source: IBEF India</span>
+        </div>
+        <div class="opp-card fade-up">
+          <span class="opp-card__n">&#8377;65K Cr+</span>
+          <h4>South India Real Estate</h4>
+          <p>Chennai, Coimbatore, and Kochi are among India's fastest-growing real estate markets. Strong residential and commercial demand is driven by IT sector growth, manufacturing, and urbanisation.</p>
+          <span class="opp-card__src">Source: JLL India, 2024</span>
+        </div>
+        <div class="opp-card fade-up">
+          <span class="opp-card__n">2070</span>
+          <h4>Net-Zero Commitment</h4>
+          <p>India's net-zero by 2070 pledge and the 50% renewable power by 2030 target create a sustained policy tailwind for solar, wind, and energy efficiency businesses for the entire decade and beyond.</p>
+          <span class="opp-card__src">Source: COP26 NDC, India</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       COMPANIES
+  ====================================================== -->
+  <section class="companies" id="companies">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow fade-up">Our Portfolio</p>
+        <h2 class="h2 fade-up">Four Companies,<br /><em>One Vision</em></h2>
+        <p class="section-desc fade-up">Each entity is individually incorporated, governed, and operated — united by the same founding ethos of excellence and purpose.</p>
+      </div>
+
+      <!-- ── Company 1: Sarnith Enterprises ── -->
+      <div class="co-card fade-up" id="sarnith">
+        <div class="co-card__stripe co-card__stripe--1"></div>
+        <div class="co-card__left">
+          <div class="co-card__num">01</div>
+          <div class="co-card__logo co-card__logo--1">SE</div>
+        </div>
+        <div class="co-card__body">
+          <div class="co-card__meta">
+            <span class="co-card__year">Est. 2015  ·  Tamil Nadu</span>
+          </div>
+          <h3 class="co-card__name">Sarnith Enterprises India<br />Private Limited</h3>
+          <p class="co-card__tagline">"Building foundations for generations."</p>
+          <p class="co-card__desc">
+            The Group's founding company, incorporated on 27 March 2015 in Tamil Nadu. Sarnith Enterprises operates across real estate development, construction contracting, and scrap and metals trading — delivering end-to-end capabilities from land acquisition through project completion.
+          </p>
+          <div class="co-card__details">
+            <div class="co-card__detail">
+              <span class="detail-label">Registered Office</span>
+              <span class="detail-value">Chennai, Tamil Nadu</span>
+            </div>
+            <div class="co-card__detail">
+              <span class="detail-label">CIN</span>
+              <span class="detail-value">U70100TN2015PTC098765</span>
+            </div>
+          </div>
+          <div class="co-card__tags">
+            <span>Real Estate</span>
+            <span>Construction</span>
+            <span>Metals Trading</span>
+            <span>Scrap Trading</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Company 2: Southern Wind Power ── -->
+      <div class="co-card fade-up" id="wind-power">
+        <div class="co-card__stripe co-card__stripe--2"></div>
+        <div class="co-card__left">
+          <div class="co-card__num">02</div>
+          <div class="co-card__logo co-card__logo--2">SWP</div>
+        </div>
+        <div class="co-card__body">
+          <div class="co-card__meta">
+            <span class="co-card__year">Est. 2022  ·  Tamil Nadu</span>
+          </div>
+          <h3 class="co-card__name">Southern Wind Power India<br />Private Limited</h3>
+          <p class="co-card__tagline">"Harnessing nature, powering progress."</p>
+          <p class="co-card__desc">
+            Incorporated on 26 May 2022, Southern Wind Power is the Group's flagship clean energy enterprise. The company focuses on wind and solar power generation, conducts dedicated R&amp;D on solar and wind systems, and provides comprehensive energy auditing services.
+          </p>
+          <div class="co-card__details">
+            <div class="co-card__detail">
+              <span class="detail-label">Registered Office</span>
+              <span class="detail-value">Coimbatore, Tamil Nadu</span>
+            </div>
+            <div class="co-card__detail">
+              <span class="detail-label">CIN</span>
+              <span class="detail-value">U40100TN2022PTC143216</span>
+            </div>
+          </div>
+          <div class="co-card__tags">
+            <span>Wind Energy</span>
+            <span>Solar Energy</span>
+            <span>Energy R&amp;D</span>
+            <span>Energy Auditing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Company 3: Southern Transport ── -->
+      <div class="co-card fade-up" id="transport">
+        <div class="co-card__stripe co-card__stripe--3"></div>
+        <div class="co-card__left">
+          <div class="co-card__num">03</div>
+          <div class="co-card__logo co-card__logo--3">ST</div>
+        </div>
+        <div class="co-card__body">
+          <div class="co-card__meta">
+            <span class="co-card__year">Est. 2023  ·  Kerala</span>
+          </div>
+          <h3 class="co-card__name">Southern Transport India<br />Private Limited</h3>
+          <p class="co-card__tagline">"Moving India forward, one route at a time."</p>
+          <p class="co-card__desc">
+            Incorporated on 16 July 2023 and registered in Kerala, Southern Transport is the Group's logistics arm. The company provides land transport services across South India, offering flexible and reliable freight movement solutions tailored to commercial and industrial clients.
+          </p>
+          <div class="co-card__details">
+            <div class="co-card__detail">
+              <span class="detail-label">Registered Office</span>
+              <span class="detail-value">Kochi, Kerala</span>
+            </div>
+            <div class="co-card__detail">
+              <span class="detail-label">CIN</span>
+              <span class="detail-value">U63090KL2023PTC192837</span>
+            </div>
+          </div>
+          <div class="co-card__tags">
+            <span>Land Transport</span>
+            <span>Freight Logistics</span>
+            <span>Supply Chain</span>
+            <span>South India</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Company 4: Southern Solar Power ── -->
+      <div class="co-card fade-up" id="solar-power">
+        <div class="co-card__stripe co-card__stripe--4"></div>
+        <div class="co-card__left">
+          <div class="co-card__num">04</div>
+          <div class="co-card__logo co-card__logo--4">SSP</div>
+        </div>
+        <div class="co-card__body">
+          <div class="co-card__meta">
+            <span class="co-card__year">Est. 2026  ·  Tamil Nadu</span>
+          </div>
+          <h3 class="co-card__name">Southern Solar Power India<br />Private Limited</h3>
+          <p class="co-card__tagline">"Turning sunlight into sustainable futures."</p>
+          <p class="co-card__desc">
+            The Group's most recent venture, incorporated on 26 February 2026 in Tamil Nadu. Southern Solar Power develops and operates solar power plants, parks, and rooftop systems; delivers EPC projects for solar and renewable energy; and offers comprehensive operations and maintenance services.
+          </p>
+          <div class="co-card__details">
+            <div class="co-card__detail">
+              <span class="detail-label">Registered Office</span>
+              <span class="detail-value">Chennai, Tamil Nadu</span>
+            </div>
+            <div class="co-card__detail">
+              <span class="detail-label">CIN</span>
+              <span class="detail-value">U40106TN2026PTC278431</span>
+            </div>
+          </div>
+          <div class="co-card__tags">
+            <span>Solar EPC</span>
+            <span>Rooftop Solar</span>
+            <span>O&amp;M Services</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       GROUP SYNERGY
+  ====================================================== -->
+  <section class="synergy" id="synergy">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow fade-up">One Group, One Ecosystem</p>
+        <h2 class="h2 fade-up">How Our Companies<br /><em>Work Together</em></h2>
+        <p class="section-desc fade-up">The Southern Group is more than a portfolio — each company creates real, tangible value for the others, forming a self-reinforcing business ecosystem unique in South India.</p>
+      </div>
+      <div class="synergy__grid">
+        <div class="syn-card fade-up">
+          <div class="syn-card__badges">
+            <span class="drop__badge" style="--bc:#8b6914">SE</span>
+            <span class="syn-card__arrow">&#8594;</span>
+            <span class="drop__badge" style="--bc:#b85c20">SSP</span>
+          </div>
+          <h4>Build &amp; Power</h4>
+          <p>Southern Solar Power installs rooftop and ground-mounted solar PV systems on residential and commercial properties developed and constructed by Sarnith Enterprises across Tamil Nadu — creating a complete build-to-power capability within the Group.</p>
+        </div>
+        <div class="syn-card fade-up">
+          <div class="syn-card__badges">
+            <span class="drop__badge" style="--bc:#8b6914">SE</span>
+            <span class="syn-card__arrow">&#8594;</span>
+            <span class="drop__badge" style="--bc:#1e5f8a">ST</span>
+          </div>
+          <h4>Build &amp; Move</h4>
+          <p>Southern Transport provides dedicated logistics services to Sarnith Enterprises — moving construction materials, metals, and equipment across South India. This direct Group relationship ensures reliable supply chain performance for Sarnith's construction projects.</p>
+        </div>
+        <div class="syn-card fade-up">
+          <div class="syn-card__badges">
+            <span class="drop__badge" style="--bc:#b85c20">SSP</span>
+            <span class="syn-card__arrow">&#8594;</span>
+            <span class="drop__badge" style="--bc:#1e5f8a">ST</span>
+          </div>
+          <h4>Solar &amp; Deliver</h4>
+          <p>Southern Transport handles the last-mile logistics for Southern Solar Power's EPC projects — moving solar panels, inverters, and installation equipment to project sites across Tamil Nadu. This intra-Group arrangement reduces procurement costs and lead times.</p>
+        </div>
+        <div class="syn-card fade-up">
+          <div class="syn-card__badges">
+            <span class="drop__badge" style="--bc:#2d7a5a">SWP</span>
+            <span class="syn-card__arrow">&#8594;</span>
+            <span class="drop__badge" style="--bc:#8b6914">SE</span>
+          </div>
+          <h4>Audit &amp; Optimise</h4>
+          <p>Southern Wind Power conducts energy audits on Sarnith's commercial and residential properties — identifying efficiency improvements and recommending renewable energy integration strategies. The Group's wind and solar expertise directly enhances the green credentials of its built environment portfolio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       TIMELINE
+  ====================================================== -->
+  <section class="timeline">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow fade-up">Our Journey</p>
+        <h2 class="h2 fade-up">Over a Decade of<br /><em>Bold Ventures</em></h2>
+      </div>
+
+      <div class="tl">
+        <div class="tl__spine" aria-hidden="true"></div>
+
+        <div class="tl__item fade-up">
+          <div class="tl__year">2015</div>
+          <div class="tl__dot" aria-hidden="true"></div>
+          <div class="tl__card">
+            <h4>Sarnith Enterprises Founded</h4>
+            <p>The Group is born. Sarnith Enterprises India Pvt Ltd is incorporated in Tamil Nadu on 27 March 2015, establishing our presence in real estate, construction, and metals trading.</p>
+          </div>
+        </div>
+
+        <div class="tl__item tl__item--r fade-up">
+          <div class="tl__year">2022</div>
+          <div class="tl__dot" aria-hidden="true"></div>
+          <div class="tl__card">
+            <h4>Entry into Renewable Energy</h4>
+            <p>Southern Wind Power India Pvt Ltd is incorporated on 26 May 2022, marking our strategic pivot into clean energy — wind, solar, hydroelectric, and beyond.</p>
+          </div>
+        </div>
+
+        <div class="tl__item fade-up">
+          <div class="tl__year">2023</div>
+          <div class="tl__dot" aria-hidden="true"></div>
+          <div class="tl__card">
+            <h4>Logistics Expansion</h4>
+            <p>Southern Transport India Pvt Ltd is incorporated on 16 July 2023 in Kerala, extending the Group's reach into land transport and freight logistics across South India.</p>
+          </div>
+        </div>
+
+        <div class="tl__item tl__item--r fade-up">
+          <div class="tl__year">2026</div>
+          <div class="tl__dot" aria-hidden="true"></div>
+          <div class="tl__card">
+            <h4>Solar Power Vertical</h4>
+            <p>Southern Solar Power India Pvt Ltd is incorporated on 26 February 2026 — the newest pillar in our renewable energy ecosystem, focusing on solar EPC, RECs, and carbon credit trading.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       LEADERSHIP
+  ====================================================== -->
+  <section class="leadership" id="leadership">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow fade-up">The People Behind the Vision</p>
+        <h2 class="h2 fade-up">Leadership &amp;<br /><em>Promoters</em></h2>
+        <p class="section-desc fade-up">Our founders and directors bring decades of entrepreneurial experience across energy, infrastructure, and commerce.</p>
+      </div>
+
+      <div class="leaders">
+
+        <div class="leader fade-up">
+          <div class="leader__avatar leader__avatar--1">GS</div>
+          <div class="leader__body">
+            <h4 class="leader__name">Ganesan Saravanakumar</h4>
+            <p class="leader__role">Founder &amp; Managing Director</p>
+            <p class="leader__desc">Principal founder of the Southern Group and Managing Director of Sarnith Enterprises India Pvt Ltd. With over a decade of experience in real estate development and civil construction across Tamil Nadu, he has grown the Group from a single enterprise into a four-company conglomerate spanning energy, logistics, and construction. He serves on the boards of all Group companies.</p>
+          </div>
+        </div>
+
+        <div class="leader fade-up">
+          <div class="leader__avatar leader__avatar--2">NK</div>
+          <div class="leader__body">
+            <h4 class="leader__name">Krishnan Nithya</h4>
+            <p class="leader__role">Co-Founder &amp; Director</p>
+            <p class="leader__desc">Co-founder and director across all four Southern Group companies. Her focus on corporate governance, regulatory compliance, and stakeholder management has established the institutional framework underpinning every Group entity — from Sarnith's founding in 2015 through the incorporation of Southern Solar Power in 2026.</p>
+          </div>
+        </div>
+
+        <div class="leader fade-up">
+          <div class="leader__avatar leader__avatar--3">AS</div>
+          <div class="leader__body">
+            <h4 class="leader__name">Alagarsamy Selvalakshmi</h4>
+            <p class="leader__role">Director — Southern Transport</p>
+            <p class="leader__desc">Founding director of Southern Transport India Pvt Ltd, bringing regional expertise in freight operations and supply chain management across Kerala and Tamil Nadu. She plays a central role in developing the company's route network and commercial relationships with manufacturing and retail clients in South India.</p>
+          </div>
+        </div>
+
+        <div class="leader fade-up">
+          <div class="leader__avatar leader__avatar--4">MM</div>
+          <div class="leader__body">
+            <h4 class="leader__name">Mahalingam Monish</h4>
+            <p class="leader__role">Director — Southern Solar Power</p>
+            <p class="leader__desc">Founding director of Southern Solar Power India Pvt Ltd and the Group's newest leadership addition. With a focus on solar EPC execution, operations and maintenance, and carbon market applications, he brings technical depth and commercial acumen to India's fastest-growing energy sector.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       VALUES
+  ====================================================== -->
+  <section class="values">
+    <div class="wrap">
+      <div class="values__grid">
+        <div class="values__intro">
+          <p class="eyebrow fade-up">What We Stand For</p>
+          <h2 class="h2 fade-up">Our Core<br /><em>Principles</em></h2>
+          <p class="values__body fade-up">Every company in the Southern Group operates on the same foundational values — because enduring enterprise is built on trust, discipline, and purpose.</p>
+        </div>
+        <div class="values__cards">
+          <div class="val-card fade-up">
+            <span class="val-card__n">01</span>
+            <h4>Integrity</h4>
+            <p>Transparent governance, ethical operations, and full compliance with the Companies Act, 2013 and all applicable regulations.</p>
+          </div>
+          <div class="val-card fade-up">
+            <span class="val-card__n">02</span>
+            <h4>Innovation</h4>
+            <p>Continuous R&amp;D in wind and solar technology keeps us ahead of industry developments and drives the Group's long-term growth.</p>
+          </div>
+          <div class="val-card fade-up">
+            <span class="val-card__n">03</span>
+            <h4>Sustainability</h4>
+            <p>Our renewable energy portfolio positions the Group as an active contributor to India's clean energy transition and net-zero goals.</p>
+          </div>
+          <div class="val-card fade-up">
+            <span class="val-card__n">04</span>
+            <h4>Excellence</h4>
+            <p>From construction sites to solar parks, every project we undertake is held to the highest standards of quality and delivery.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       CSR / COMMUNITY
+  ====================================================== -->
+  <section class="csr">
+    <div class="wrap">
+      <div class="csr__grid">
+        <div>
+          <p class="eyebrow fade-up">Our Commitment</p>
+          <h2 class="h2 fade-up">Community &amp;<br /><em>Sustainability</em></h2>
+          <p class="csr__body fade-up">The Southern Group recognises that responsible business means investing in the communities where we operate and in the environment we all share. Across Tamil Nadu and Kerala, we are committed to local employment, clean energy, and transparent governance.</p>
+        </div>
+        <div class="csr__pillars">
+          <div class="csr__pillar fade-up">
+            <div class="csr__pillar-icon">01</div>
+            <div class="csr__pillar-body">
+              <h4>Clean Energy Mission</h4>
+              <p>Our renewable energy companies actively contribute to India's decarbonisation goals — reducing fossil fuel dependence and bringing clean power to South India through wind, solar, and energy auditing.</p>
+            </div>
+          </div>
+          <div class="csr__pillar fade-up">
+            <div class="csr__pillar-icon">02</div>
+            <div class="csr__pillar-body">
+              <h4>Local Employment</h4>
+              <p>We prioritise hiring from within Tamil Nadu and Kerala — creating skilled jobs in construction, energy, and logistics for the local communities where our companies operate.</p>
+            </div>
+          </div>
+          <div class="csr__pillar fade-up">
+            <div class="csr__pillar-icon">03</div>
+            <div class="csr__pillar-body">
+              <h4>Governance &amp; Transparency</h4>
+              <p>All four companies are incorporated and governed under the Companies Act, 2013, with full regulatory compliance, annual filings, and ethical business standards as non-negotiable baseline commitments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       CAREERS
+  ====================================================== -->
+  <section class="careers" id="careers">
+    <div class="wrap">
+      <div class="careers__inner fade-up">
+        <div>
+          <p class="eyebrow">Join Our Team</p>
+          <h2 class="careers__title">We're Building a Team as<br /><em>Ambitious as Our Vision</em></h2>
+          <p class="careers__body">We are growing across all four companies — in renewable energy, construction, logistics, and solar EPC. If you are driven, skilled, and want to be part of South India's next growth story, we want to hear from you.</p>
+          <div class="careers__roles">
+            <span>Renewable Energy Engineers</span>
+            <span>Site &amp; Project Managers</span>
+            <span>Logistics Coordinators</span>
+            <span>Solar EPC Technicians</span>
+            <span>Civil Construction</span>
+            <span>Energy Auditors</span>
+          </div>
+        </div>
+        <div class="careers__cta-card">
+          <p class="careers__cta-label">Send your CV to</p>
+          <a href="mailto:careers@southerngroup.in" class="careers__email">careers@southerngroup.in</a>
+          <p class="careers__note">We review all applications and respond within 5 working days. Openings across Chennai, Coimbatore, and Kochi.</p>
+          <a href="mailto:careers@southerngroup.in" class="btn btn--dark">Apply Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       CONTACT
+  ====================================================== -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact__grid">
+
+        <div class="contact__info">
+          <p class="eyebrow fade-up">Get in Touch</p>
+          <h2 class="h2 fade-up">Let's Build<br /><em>Something Together</em></h2>
+          <p class="contact__body fade-up">Whether you are an investor, partner, or client looking to engage with one of our companies, we welcome the conversation.</p>
+
+          <div class="contact__facts fade-up">
+            <div class="contact__fact">
+              <span class="fact-label">Headquarters</span>
+              <span class="fact-value">Chennai &amp; Kochi, India</span>
+            </div>
+            <div class="contact__fact">
+              <span class="fact-label">Phone</span>
+              <span class="fact-value">+91 98765 43210</span>
+            </div>
+            <div class="contact__fact">
+              <span class="fact-label">Email</span>
+              <span class="fact-value">info@southerngroup.in</span>
+            </div>
+            <div class="contact__fact">
+              <span class="fact-label">Sectors</span>
+              <span class="fact-value">Energy · Transport · Real Estate · Trading</span>
+            </div>
+          </div>
+
+          <div class="contact__cos fade-up">
+            <p class="contact__cos-label">Our Companies</p>
+            <a href="sarnith.html">Sarnith Enterprises India Pvt Ltd</a>
+            <a href="wind-power.html">Southern Wind Power India Pvt Ltd</a>
+            <a href="transport.html">Southern Transport India Pvt Ltd</a>
+            <a href="solar-power.html">Southern Solar Power India Pvt Ltd</a>
+          </div>
+        </div>
+
+        <div class="contact__form-wrap fade-up">
+          <form class="form" id="contactForm" novalidate>
+            <div class="form__row">
+              <div class="form__grp">
+                <label for="f-name">Full Name</label>
+                <input id="f-name" type="text" placeholder="Your full name" required />
+              </div>
+              <div class="form__grp">
+                <label for="f-email">Email Address</label>
+                <input id="f-email" type="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form__grp">
+              <label for="f-org">Organisation</label>
+              <input id="f-org" type="text" placeholder="Your company or organisation" />
+            </div>
+            <div class="form__grp">
+              <label for="f-interest">Area of Interest</label>
+              <select id="f-interest">
+                <option value="" disabled selected>Select a company or division</option>
+                <option>Sarnith Enterprises — Real Estate &amp; Construction</option>
+                <option>Southern Wind Power — Renewable Energy</option>
+                <option>Southern Transport — Logistics</option>
+                <option>Southern Solar Power — Solar EPC</option>
+                <option>General Enquiry</option>
+              </select>
+            </div>
+            <div class="form__grp">
+              <label for="f-msg">Message</label>
+              <textarea id="f-msg" rows="5" placeholder="Tell us about your project or enquiry..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--dark btn--full">Send Message</button>
+            <p class="form__note">We typically respond within 24 to 48 business hours.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#home" class="logo logo--footer">
+            <img src="logo.png.jpeg" alt="Southern Group of Companies" class="logo__img logo__img--footer" />
+          </a>
+          <p class="footer__tagline">Building India's sustainable tomorrow through diversified excellence.</p>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/company/southern-group-of-companies" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h5>Our Companies</h5>
+            <ul>
+              <li><a href="sarnith.html">Sarnith Enterprises India Pvt Ltd</a></li>
+              <li><a href="wind-power.html">Southern Wind Power India Pvt Ltd</a></li>
+              <li><a href="transport.html">Southern Transport India Pvt Ltd</a></li>
+              <li><a href="solar-power.html">Southern Solar Power India Pvt Ltd</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h5>Navigate</h5>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#companies">Portfolio</a></li>
+              <li><a href="#leadership">Leadership</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h5>Sectors</h5>
+            <ul>
+              <li>Renewable Energy</li>
+              <li>Real Estate &amp; Construction</li>
+              <li>Logistics &amp; Transport</li>
+              <li>Metals &amp; Commodities</li>
+              <li>Solar EPC &amp; RECs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Southern Group of Companies. All rights reserved.</p>
+        <p>All companies incorporated under the Companies Act, 2013, India.</p>
+        <p>Group Offices: Chennai &amp; Coimbatore, Tamil Nadu &nbsp;&middot;&nbsp; Kochi, Kerala, India</p>
+        <p class="footer__powered">Powered by <a href="https://thearktech.in" target="_blank" rel="noopener noreferrer">thearktech.in</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=3"></script>
+</body>
+</html>
