@@ -18,11 +18,11 @@ burger.addEventListener('click', () => {
   burger.setAttribute('aria-expanded', open);
 });
 
-drawer.querySelectorAll('.nav__a').forEach(a => {
+drawer.querySelectorAll('.nav__a:not(.drawer__grp-btn)').forEach(a => {
   a.addEventListener('click', () => {
     drawer.classList.remove('open');
     burger.classList.remove('open');
-    burger.setAttribute('aria-expanded', false);
+    burger.setAttribute('aria-expanded', 'false');
   });
 });
 
@@ -32,8 +32,9 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     const target = document.querySelector(a.getAttribute('href'));
     if (!target) return;
     e.preventDefault();
+    const hdrH = header ? header.getBoundingClientRect().height : 72;
     window.scrollTo({
-      top: target.getBoundingClientRect().top + window.scrollY - 80,
+      top: target.getBoundingClientRect().top + window.scrollY - hdrH - 8,
       behavior: 'smooth'
     });
   });

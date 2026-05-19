@@ -44,7 +44,12 @@
 
 /* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; }
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
 
 body {
   font-family: var(--sans);
@@ -53,6 +58,7 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -329,6 +335,24 @@ img { display: block; max-width: 100%; }
   padding: 0.65rem 0.75rem;
   font-size: 0.9rem;
   border-radius: 6px;
+}
+
+/*
+  The dark-header rule (.header:not(.scrolled) .nav__a) makes ALL .nav__a
+  elements white — including drawer links, which sit on a white background.
+  This rule has equal or higher specificity and appears after, so it wins.
+*/
+.header .drawer .nav__a,
+.header .drawer .drawer__grp-btn {
+  color: var(--ink-3);
+}
+.header .drawer .nav__a:hover,
+.header .drawer .drawer__grp-btn:hover {
+  color: var(--ink);
+  background: var(--cream);
+}
+.header .drawer .nav__a.active {
+  color: var(--gold);
 }
 
 /* ================================================
@@ -1696,6 +1720,19 @@ img { display: block; max-width: 100%; }
   .activities-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
   .ownership-grid  { grid-template-columns: 1fr; }
   .other-cos       { grid-template-columns: 1fr 1fr; }
+
+  /* Touch targets — drawer must hit 44px */
+  .drawer .nav__a  { min-height: 44px; display: flex; align-items: center; }
+  .drawer__grp-btn { min-height: 44px; }
+  .drawer__sub-a   { min-height: 40px !important; display: flex !important; align-items: center !important; }
+
+  /* Prevent iOS Safari auto-zoom on form focus (requires ≥16px) */
+  .form__grp input,
+  .form__grp select,
+  .form__grp textarea { font-size: 1rem; }
+
+  /* South India dark band */
+  .south-india { padding: 4rem 0; }
 }
 
 /* ── Small phones (≤520px) ── */
@@ -1719,7 +1756,8 @@ img { display: block; max-width: 100%; }
   .hero__stat-n { font-size: 1.6rem; }
   .hero__cos-inner { grid-template-columns: 1fr; }
   .hero__cos-div   { display: none !important; }
-  .hero__co        { border-bottom: 1px solid var(--border); display: flex !important; }
+  /* Hero bar is dark — use white-alpha border, not the light --border */
+  .hero__co        { border-bottom: 1px solid rgba(255,255,255,0.1); display: flex !important; }
   .hero__co:last-child { border-bottom: none; }
 
   /* Company cards */
@@ -1745,19 +1783,27 @@ img { display: block; max-width: 100%; }
   /* Company pages */
   .co-pg-hero { padding: calc(var(--hdr-h) + 2rem) 0 2.5rem; }
   .co-pg-hero__facts { flex-direction: column; }
-  .co-pg-hero__fact  { border-right: none; border-bottom: 1px solid var(--border); width: 100%; }
+  .co-pg-hero__fact  { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); width: 100%; }
   .co-pg-hero__fact:last-child { border-bottom: none; }
   .activities-grid { grid-template-columns: 1fr; gap: 0.875rem; }
   .other-cos       { grid-template-columns: 1fr; }
   .co-section      { padding: 2.5rem 0; }
   .promoter__bar-wrap { gap: 0.5rem; }
+
+  /* South India dark band */
+  .south-india { padding: 3rem 0; }
+
+  /* Company page hero CTA stack */
+  .co-pg-hero .hero__btns { flex-direction: column; align-items: stretch; }
+  .co-pg-hero .hero__btns .btn { width: 100%; justify-content: center; }
 }
 
 /* ── Very small phones (≤380px) ── */
 @media (max-width: 380px) {
   .wrap { padding: 0 1rem; }
   .h2   { font-size: 1.8rem; }
-  .hero__stat { flex: 0 0 100%; border-bottom: 1px solid var(--border); }
+  /* Dark hero stats pill — match gold-tinted separator */
+  .hero__stat { flex: 0 0 100%; border-bottom: 1px solid rgba(184,147,90,0.18); }
   .hero__stat:last-child { border-bottom: none; }
   .co-card__detail { flex: 1 1 100%; border-right: none; border-bottom: 1px solid var(--border); }
   .co-card__detail:last-child { border-bottom: none; }
@@ -1973,8 +2019,10 @@ img { display: block; max-width: 100%; }
 
 /* Company page hero */
 .co-pg-hero {
-  padding: calc(var(--hdr-h) + 4rem) 0 5rem;
-  background: var(--white);
+  padding: calc(var(--hdr-h) + 4.5rem) 0 6rem;
+  background: var(--ink);
+  background-image: radial-gradient(rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 28px 28px;
   position: relative;
   overflow: hidden;
 }
@@ -1985,10 +2033,10 @@ img { display: block; max-width: 100%; }
   top: 50%;
   transform: translateY(-50%);
   font-family: var(--serif);
-  font-size: clamp(120px, 18vw, 240px);
+  font-size: clamp(120px, 18vw, 260px);
   font-weight: 700;
-  color: var(--ink);
-  opacity: 0.03;
+  color: #fff;
+  opacity: 0.04;
   user-select: none;
   pointer-events: none;
   line-height: 1;
@@ -1998,7 +2046,7 @@ img { display: block; max-width: 100%; }
 .co-pg-hero__stripe {
   position: absolute;
   left: 0; top: 0; bottom: 0;
-  width: 4px;
+  width: 5px;
 }
 
 .co-pg-hero__inner {
@@ -2006,28 +2054,35 @@ img { display: block; max-width: 100%; }
   z-index: 1;
 }
 
+/* Breadcrumb on dark hero */
+.co-pg-hero .breadcrumb       { color: rgba(255,255,255,0.38); }
+.co-pg-hero .breadcrumb a     { color: rgba(255,255,255,0.52); }
+.co-pg-hero .breadcrumb a:hover { color: var(--gold); }
+.co-pg-hero .breadcrumb__sep  { opacity: 0.25; color: #fff; }
+.co-pg-hero .breadcrumb__cur  { color: rgba(255,255,255,0.75); font-weight: 500; }
+
 .co-pg-hero__logo {
-  width: 64px;
-  height: 64px;
-  border-radius: 12px;
+  width: 68px;
+  height: 68px;
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   font-weight: 800;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   border: 1.5px solid;
-  margin-bottom: 1.75rem;
+  margin-bottom: 2rem;
 }
 
 .co-pg-hero h1 {
   font-family: var(--serif);
-  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  font-size: clamp(2.6rem, 5.5vw, 4.6rem);
   font-weight: 300;
   line-height: 1.1;
-  color: var(--ink);
-  margin-bottom: 0.875rem;
-  max-width: 700px;
+  color: var(--white);
+  margin-bottom: 1rem;
+  max-width: 750px;
 }
 
 .co-pg-hero__tagline {
@@ -2036,27 +2091,31 @@ img { display: block; max-width: 100%; }
   font-size: 1.15rem;
   font-weight: 300;
   color: var(--gold);
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--gold);
+  opacity: 0.88;
 }
 
 .co-pg-hero__facts {
   display: flex;
   align-items: center;
   gap: 0;
-  margin-bottom: 2.5rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--off-white);
+  margin-bottom: 2.75rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05);
   width: fit-content;
   overflow: hidden;
+  backdrop-filter: blur(8px);
 }
 
 .co-pg-hero__fact {
-  padding: 0.75rem 1.5rem;
+  padding: 0.875rem 1.75rem;
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
-  border-right: 1px solid var(--border);
+  gap: 0.2rem;
+  border-right: 1px solid rgba(255,255,255,0.08);
 }
 
 .co-pg-hero__fact:last-child { border-right: none; }
@@ -2066,13 +2125,35 @@ img { display: block; max-width: 100%; }
   font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--muted-2);
+  color: rgba(255,255,255,0.38);
 }
 
 .cpf-value {
-  font-size: 0.875rem;
-  font-weight: 700;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.92);
+}
+
+/* Buttons on dark hero */
+.co-pg-hero .btn--dark {
+  background: var(--gold);
   color: var(--ink);
+  font-weight: 700;
+}
+.co-pg-hero .btn--dark:hover {
+  background: var(--gold-2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(184,147,90,0.35);
+}
+.co-pg-hero .btn--outline {
+  border-color: rgba(255,255,255,0.22);
+  color: rgba(255,255,255,0.78);
+  background: transparent;
+}
+.co-pg-hero .btn--outline:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  transform: translateY(-2px);
 }
 
 /* Overview section */
@@ -2309,7 +2390,8 @@ img { display: block; max-width: 100%; }
   .activities-grid  { grid-template-columns: 1fr 1fr; gap: 0.875rem; }
   .other-cos        { grid-template-columns: 1fr 1fr; gap: 1rem; }
   .co-pg-hero__facts { flex-direction: column; width: 100%; }
-  .co-pg-hero__fact  { border-right: none; border-bottom: 1px solid var(--border); }
+  /* Dark-hero fact divider — must use white-alpha, not the light --border value */
+  .co-pg-hero__fact  { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
   .co-pg-hero__fact:last-child { border-bottom: none; }
   .co-section { padding: 3rem 0; }
 }
@@ -2343,6 +2425,11 @@ img { display: block; max-width: 100%; }
 .opportunity::before { margin-bottom: 5rem; }
 .synergy::before     { margin-bottom: 5rem; }
 .csr::before         { margin-bottom: 5rem; }
+
+/* ================================================
+   SOUTH INDIA SECTION (index.html dark band)
+   ================================================ */
+.south-india { padding: 6rem 0; }
 
 /* ================================================
    INDIA OPPORTUNITY
@@ -2717,6 +2804,15 @@ img { display: block; max-width: 100%; }
   .opportunity::before, .synergy::before, .csr::before { margin-bottom: 3rem; }
   .synergy__grid { grid-template-columns: 1fr; }
   .certs-strip__inner { gap: 1rem; }
+  /* Careers inner already 1-col from 1024px — stack buttons nicely */
+  .careers__inner { gap: 2.5rem; }
+}
+
+@media (max-width: 640px) {
+  /* Market Spotlight synergy grid stays 1-col */
+  .synergy__grid { grid-template-columns: 1fr; }
+  /* Opportunity section 2→1 col earlier on small tablets */
+  .opp-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 520px) {
@@ -2724,4 +2820,7 @@ img { display: block; max-width: 100%; }
   .opp-grid { grid-template-columns: 1fr; }
   .synergy__grid { grid-template-columns: 1fr; }
   .certs-strip__items { gap: 0.4rem; }
+  /* Careers CTA card on narrow phones */
+  .careers__cta-card { padding: 1.75rem 1.25rem; }
+  .careers__email { word-break: break-all; font-size: 0.95rem; }
 }
