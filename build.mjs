@@ -41,7 +41,7 @@ fs.mkdirSync(path.join(DIST, 'js'), { recursive: true });
 run(`npx terser "${path.join(SRC, 'js', 'main.js')}" -o "${path.join(DIST, 'js', 'main.js')}" --compress --mangle`);
 
 /* ── HTML pages ── */
-const HTML_FILES = ['index.html', 'sarnith.html', 'wind-power.html', 'transport.html', 'solar-power.html'];
+const HTML_FILES = ['index.html', 'sarnith.html', 'southern-enterprises.html', 'wind-power.html', 'transport.html', 'solar-power.html'];
 const HTML_OPTS  = [
   '--collapse-whitespace',
   '--remove-comments',

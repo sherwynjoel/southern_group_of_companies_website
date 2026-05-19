@@ -27,6 +27,7 @@
   --c2: #2d7a5a;   /* Wind Power — green */
   --c3: #1e5f8a;   /* Transport — blue */
   --c4: #b85c20;   /* Solar — burnt orange */
+  --c5: #607585;   /* Southern Enterprises — steel grey */
 
   /* Typography */
   --serif: 'Cormorant Garamond', Georgia, serif;
@@ -867,6 +868,7 @@ img { display: block; max-width: 100%; }
 .co-card__stripe--2 { background: var(--c2); }
 .co-card__stripe--3 { background: var(--c3); }
 .co-card__stripe--4 { background: var(--c4); }
+.co-card__stripe--5 { background: var(--c5); }
 
 /* Left column */
 .co-card__left {
@@ -904,6 +906,7 @@ img { display: block; max-width: 100%; }
 .co-card__logo--2 { background: rgba(45,122,90,0.08);   border-color: rgba(45,122,90,0.2);   color: var(--c2); }
 .co-card__logo--3 { background: rgba(30,95,138,0.08);   border-color: rgba(30,95,138,0.2);   color: var(--c3); }
 .co-card__logo--4 { background: rgba(184,92,32,0.08);   border-color: rgba(184,92,32,0.2);   color: var(--c4); }
+.co-card__logo--5 { background: rgba(96,117,133,0.08);  border-color: rgba(96,117,133,0.2);  color: var(--c5); }
 
 /* Body */
 .co-card__body {
