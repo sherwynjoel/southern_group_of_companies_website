@@ -1,0 +1,27 @@
+{
+  "name": "southern-group-of-companies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sherwynjoel/southern_group_of_companies_website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/sherwynjoel/southern_group_of_companies_website/issues"
+  },
+  "homepage": "https://github.com/sherwynjoel/southern_group_of_companies_website#readme",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "html-minifier-terser": "^7.2.0",
+    "terser": "^5.47.1"
+  }
+}
