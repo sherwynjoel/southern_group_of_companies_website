@@ -18,7 +18,7 @@
   <header class="header" id="header">
     <div class="header__inner">
       <a href="#home" class="logo">
-        
+        <img class="logo__img" src="logo.PNG" alt="Southern Group of Companies" />
       </a>
 
       <nav class="nav" id="nav">
@@ -67,6 +67,13 @@
               </span>
               <span class="drop__year">2026</span>
             </a>
+            <a href="southern-realtors.html" class="drop__link" role="menuitem">
+              <span class="drop__badge" style="--bc:#7b2d2d">SR</span>
+              <span class="drop__text">
+                <span class="drop__name">Southern Realtors</span>
+                <span class="drop__meta">Land · Properties · Real Estate</span>
+              </span>
+            </a>
           </div>
         </div>
         <a href="#leadership" class="nav__a">Leadership</a>
@@ -91,10 +98,11 @@
         </button>
         <div class="drawer__sub" id="drawerSub">
           <a href="sarnith.html"     class="nav__a drawer__sub-a">Sarnith Enterprises India Pvt Ltd</a>
-          <a href="southern-enterprises.html"   class="nav__a drawer__sub-a">Southern Enterprises India Pvt Ltd</a>
+          <a href="southern-enterprises.html"   class="nav__a drawer__sub-a">Southern Enterprises</a>
           <a href="wind-power.html"  class="nav__a drawer__sub-a">Southern Wind Power India Pvt Ltd</a>
           <a href="transport.html"   class="nav__a drawer__sub-a">Southern Transport India Pvt Ltd</a>
           <a href="solar-power.html" class="nav__a drawer__sub-a">Southern Solar Power India Pvt Ltd</a>
+          <a href="southern-realtors.html" class="nav__a drawer__sub-a">Southern Realtors</a>
         </div>
       </div>
       <a href="#leadership" class="nav__a">Leadership</a>
@@ -148,7 +156,7 @@
       <!-- Stats row -->
       <div class="hero__stats fade-up">
         <div class="hero__stat">
-          <span class="hero__stat-n" data-to="5">0</span>
+          <span class="hero__stat-n" data-to="6">0</span>
           <span class="hero__stat-l">Companies</span>
         </div>
         <div class="hero__stat-sep"></div>
@@ -165,9 +173,10 @@
 
     </div>
 
-    <!-- Company strip — pinned to bottom -->
+    <!-- Company strip — pinned to bottom, auto-scrolling ticker -->
     <div class="hero__cos-bar fade-up">
       <div class="hero__cos-inner">
+        <!-- set 1 -->
         <a href="sarnith.html" class="hero__co">
           <span class="hero__co-ab">SE</span>
           <div class="hero__co-text">
@@ -210,6 +219,67 @@
             <span class="hero__co-sector">Solar Energy · Panel Sales · O&amp;M</span>
           </div>
           <span class="hero__co-year">2026</span>
+        </a>
+        <div class="hero__cos-div"></div>
+        <a href="southern-realtors.html" class="hero__co">
+          <span class="hero__co-ab">SR</span>
+          <div class="hero__co-text">
+            <span class="hero__co-name">Southern Realtors</span>
+            <span class="hero__co-sector">Land · Properties · Real Estate</span>
+          </div>
+        </a>
+        <div class="hero__cos-div"></div>
+        <!-- set 2 — duplicate for seamless loop -->
+        <a href="sarnith.html" class="hero__co" aria-hidden="true">
+          <span class="hero__co-ab">SE</span>
+          <div class="hero__co-text">
+            <span class="hero__co-name">Sarnith Enterprises</span>
+            <span class="hero__co-sector">Scrap Trading · Pan-India</span>
+          </div>
+          <span class="hero__co-year">2015</span>
+        </a>
+        <div class="hero__cos-div"></div>
+        <a href="southern-enterprises.html" class="hero__co" aria-hidden="true">
+          <span class="hero__co-ab">SEN</span>
+          <div class="hero__co-text">
+            <span class="hero__co-name">Southern Enterprises</span>
+            <span class="hero__co-sector">Iron &amp; Aluminum Trading</span>
+          </div>
+        </a>
+        <div class="hero__cos-div"></div>
+        <a href="wind-power.html" class="hero__co" aria-hidden="true">
+          <span class="hero__co-ab">SWP</span>
+          <div class="hero__co-text">
+            <span class="hero__co-name">Southern Wind Power</span>
+            <span class="hero__co-sector">Wind Energy · Windmill Operations</span>
+          </div>
+          <span class="hero__co-year">2022</span>
+        </a>
+        <div class="hero__cos-div"></div>
+        <a href="transport.html" class="hero__co" aria-hidden="true">
+          <span class="hero__co-ab">ST</span>
+          <div class="hero__co-text">
+            <span class="hero__co-name">Southern Transport</span>
+            <span class="hero__co-sector">Freight · Logistics · Public Transport</span>
+          </div>
+          <span class="hero__co-year">2023</span>
+        </a>
+        <div class="hero__cos-div"></div>
+        <a href="solar-power.html" class="hero__co" aria-hidden="true">
+          <span class="hero__co-ab">SSP</span>
+          <div class="hero__co-text">
+            <span class="hero__co-name">Southern Solar Power</span>
+            <span class="hero__co-sector">Solar Energy · Panel Sales · O&amp;M</span>
+          </div>
+          <span class="hero__co-year">2026</span>
+        </a>
+        <div class="hero__cos-div"></div>
+        <a href="southern-realtors.html" class="hero__co" aria-hidden="true">
+          <span class="hero__co-ab">SR</span>
+          <div class="hero__co-text">
+            <span class="hero__co-name">Southern Realtors</span>
+            <span class="hero__co-sector">Land · Properties · Real Estate</span>
+          </div>
         </a>
       </div>
     </div>
@@ -430,7 +500,7 @@
           </div>
           <div>
             <p style="font-size:0.68rem;letter-spacing:0.11em;text-transform:uppercase;color:#607585;font-weight:500;margin-bottom:0.35rem;">Pan-India &nbsp;·&nbsp; Iron &amp; Aluminum Trading</p>
-            <h3 style="font-size:1.05rem;font-weight:600;line-height:1.35;color:#1c1714;margin-bottom:0.4rem;">Southern Enterprises India Pvt Ltd</h3>
+            <h3 style="font-size:1.05rem;font-weight:600;line-height:1.35;color:#1c1714;margin-bottom:0.4rem;">Southern Enterprises</h3>
             <p style="font-style:italic;font-size:0.83rem;color:#7a6f63;line-height:1.5;">"From Factory to Supplier — With Precision and Trust."</p>
           </div>
           <p style="font-size:0.83rem;line-height:1.7;color:#524940;flex:1;">Factory-direct iron and aluminum product trading — sourcing finished products from manufacturers and distributing to dealers, contractors, and industrial buyers pan-India.</p>
@@ -503,6 +573,27 @@
             <span style="font-size:0.7rem;padding:0.22rem 0.65rem;border:1px solid #d9d2c6;border-radius:20px;color:#7a6f63;">Installation</span>
           </div>
           <span style="font-size:0.82rem;font-weight:600;color:#b85c20;display:flex;align-items:center;gap:0.35rem;">View Company &#8594;</span>
+        </a>
+
+        <!-- 06 Southern Realtors -->
+        <a href="southern-realtors.html" id="southern-realtors" class="fade-up" style="text-decoration:none;border:1px solid #e2dbd0;border-radius:18px;padding:2rem 1.75rem;display:flex;flex-direction:column;gap:1.1rem;position:relative;overflow:hidden;background:#fff;transition:box-shadow 0.25s,transform 0.25s;">
+          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#7b2d2d;border-radius:18px 18px 0 0;"></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding-top:0.5rem;">
+            <span class="drop__badge" style="--bc:#7b2d2d;width:2.75rem;height:2.75rem;font-size:0.72rem;">SR</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:2.75rem;font-weight:300;color:#ede8df;line-height:1;user-select:none;">06</span>
+          </div>
+          <div>
+            <p style="font-size:0.68rem;letter-spacing:0.11em;text-transform:uppercase;color:#7b2d2d;font-weight:500;margin-bottom:0.35rem;">Tamil Nadu &amp; Kerala &nbsp;·&nbsp; Real Estate</p>
+            <h3 style="font-size:1.05rem;font-weight:600;line-height:1.35;color:#1c1714;margin-bottom:0.4rem;">Southern Realtors</h3>
+            <p style="font-style:italic;font-size:0.83rem;color:#7a6f63;line-height:1.5;">"Where Every Plot Tells a Story. Where Every Property Builds a Future."</p>
+          </div>
+          <p style="font-size:0.83rem;line-height:1.7;color:#524940;flex:1;">Residential plots, commercial properties, agricultural land, and premium villa sites — 8 services spanning land sales, property advisory, documentation, and property management across South India.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:0.35rem;">
+            <span style="font-size:0.7rem;padding:0.22rem 0.65rem;border:1px solid #d9d2c6;border-radius:20px;color:#7a6f63;">Land &amp; Plots</span>
+            <span style="font-size:0.7rem;padding:0.22rem 0.65rem;border:1px solid #d9d2c6;border-radius:20px;color:#7a6f63;">Commercial Property</span>
+            <span style="font-size:0.7rem;padding:0.22rem 0.65rem;border:1px solid #d9d2c6;border-radius:20px;color:#7a6f63;">Agriculture</span>
+          </div>
+          <span style="font-size:0.82rem;font-weight:600;color:#7b2d2d;display:flex;align-items:center;gap:0.35rem;">View Company &#8594;</span>
         </a>
 
       </div>
@@ -725,15 +816,6 @@
         </div>
 
         <div class="leader fade-up">
-          <div class="leader__avatar leader__avatar--3">AS</div>
-          <div class="leader__body">
-            <h4 class="leader__name">Alagarsamy Selvalakshmi</h4>
-            <p class="leader__role">Director — Southern Transport</p>
-            <p class="leader__desc">Founding director of Southern Transport India Pvt Ltd, bringing regional expertise in freight operations and supply chain management across Kerala and Tamil Nadu. She plays a central role in developing the company's route network and commercial relationships with manufacturing and retail clients in South India.</p>
-          </div>
-        </div>
-
-        <div class="leader fade-up">
           <div class="leader__avatar leader__avatar--4">MM</div>
           <div class="leader__body">
             <h4 class="leader__name">Mahalingam Monish</h4>
@@ -845,9 +927,9 @@
         </div>
         <div class="careers__cta-card">
           <p class="careers__cta-label">Send your CV to</p>
-          <a href="mailto:careers@southerngroup.in" class="careers__email">careers@southerngroup.in</a>
+          <a href="mailto:southerngroups2022@gmail.com" class="careers__email">southerngroups2022@gmail.com</a>
           <p class="careers__note">We review all applications and respond within 5 working days. Openings across Chennai, Coimbatore, and Kochi.</p>
-          <a href="mailto:careers@southerngroup.in" class="btn btn--dark">Apply Now</a>
+          <a href="mailto:southerngroups2022@gmail.com" class="btn btn--dark">Apply Now</a>
         </div>
       </div>
     </div>
@@ -872,8 +954,24 @@
               <span class="fact-value">Chennai &amp; Kochi, India</span>
             </div>
             <div class="contact__fact">
+              <span class="fact-label">Phone</span>
+              <span class="fact-value"><a href="tel:+919566647774" style="color:inherit;">+91 95666 47774</a></span>
+            </div>
+            <div class="contact__fact">
+              <span class="fact-label">WhatsApp</span>
+              <span class="fact-value"><a href="https://wa.me/919566647774" target="_blank" rel="noopener noreferrer" style="color:inherit;">+91 95666 47774</a></span>
+            </div>
+            <div class="contact__fact">
+              <span class="fact-label">Landline</span>
+              <span class="fact-value"><a href="tel:04224727075" style="color:inherit;">0422-4727075</a></span>
+            </div>
+            <div class="contact__fact">
+              <span class="fact-label">Alternative</span>
+              <span class="fact-value"><a href="tel:9944800077" style="color:inherit;">9944800077</a></span>
+            </div>
+            <div class="contact__fact">
               <span class="fact-label">Email</span>
-              <span class="fact-value">info@southerngroup.in</span>
+              <span class="fact-value">southerngroups2022@gmail.com</span>
             </div>
             <div class="contact__fact">
               <span class="fact-label">Sectors</span>
@@ -884,10 +982,11 @@
           <div class="contact__cos fade-up">
             <p class="contact__cos-label">Our Companies</p>
             <a href="sarnith.html">Sarnith Enterprises India Pvt Ltd</a>
-            <a href="southern-enterprises.html">Southern Enterprises India Pvt Ltd</a>
+            <a href="southern-enterprises.html">Southern Enterprises</a>
             <a href="wind-power.html">Southern Wind Power India Pvt Ltd</a>
             <a href="transport.html">Southern Transport India Pvt Ltd</a>
             <a href="solar-power.html">Southern Solar Power India Pvt Ltd</a>
+            <a href="southern-realtors.html">Southern Realtors</a>
           </div>
         </div>
 
@@ -916,6 +1015,7 @@
                 <option>Southern Wind Power — Wind Energy &amp; Windmill O&amp;M</option>
                 <option>Southern Transport — Freight, Logistics &amp; Public Transport</option>
                 <option>Southern Solar Power — Solar Energy, Panel Sales &amp; O&amp;M</option>
+                <option>Southern Realtors — Land, Properties &amp; Real Estate</option>
                 <option>General Enquiry</option>
               </select>
             </div>
@@ -941,7 +1041,7 @@
       <div class="footer__top">
         <div class="footer__brand">
           <a href="#home" class="logo logo--footer">
-            
+            <img class="logo__img logo__img--footer" src="logo.PNG" alt="Southern Group of Companies" />
           </a>
           <p class="footer__tagline">Building India's sustainable tomorrow through diversified excellence.</p>
           <div class="footer__social" style="display:none">
@@ -955,10 +1055,11 @@
             <h5>Our Companies</h5>
             <ul>
               <li><a href="sarnith.html">Sarnith Enterprises India Pvt Ltd</a></li>
-            <li><a href="southern-enterprises.html">Southern Enterprises India Pvt Ltd</a></li>
+            <li><a href="southern-enterprises.html">Southern Enterprises</a></li>
               <li><a href="wind-power.html">Southern Wind Power India Pvt Ltd</a></li>
               <li><a href="transport.html">Southern Transport India Pvt Ltd</a></li>
               <li><a href="solar-power.html">Southern Solar Power India Pvt Ltd</a></li>
+              <li><a href="southern-realtors.html">Southern Realtors</a></li>
             </ul>
           </div>
           <div class="footer__col">

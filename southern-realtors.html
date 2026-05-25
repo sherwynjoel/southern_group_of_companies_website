@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Southern Realtors — Premium Real Estate | Southern Group</title>
+  <meta name="description" content="Southern Realtors — premium land, residential plots, commercial properties, and real estate services across Tamil Nadu and Kerala. A Southern Group company." />
+  <link rel="stylesheet" href="css/style.css?v=16" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <img class="logo__img" src="logo.PNG" alt="Southern Group of Companies" />
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__a">Home</a>
+        <a href="index.html#about" class="nav__a">About</a>
+        <div class="drop" id="companyDrop">
+          <button class="nav__a drop__btn" id="companyDropBtn" aria-haspopup="true" aria-expanded="false">
+            Companies
+            <svg class="drop__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="drop__panel" role="menu">
+            <a href="sarnith.html" class="drop__link" role="menuitem">
+              <span class="drop__badge" style="--bc:#8b6914">SE</span>
+              <span class="drop__text"><span class="drop__name">Sarnith Enterprises</span><span class="drop__meta">Aluminum Scrap · Iron Scrap · Pan-India</span></span>
+              <span class="drop__year">2015</span>
+            </a>
+            <a href="southern-enterprises.html" class="drop__link" role="menuitem">
+              <span class="drop__badge" style="--bc:#607585">SEN</span>
+              <span class="drop__text"><span class="drop__name">Southern Enterprises</span><span class="drop__meta">Iron &amp; Aluminum · Product Trading</span></span>
+            </a>
+            <a href="wind-power.html" class="drop__link" role="menuitem">
+              <span class="drop__badge" style="--bc:#2d7a5a">SWP</span>
+              <span class="drop__text"><span class="drop__name">Southern Wind Power</span><span class="drop__meta">Wind Energy · Windmill Operations</span></span>
+              <span class="drop__year">2022</span>
+            </a>
+            <a href="transport.html" class="drop__link" role="menuitem">
+              <span class="drop__badge" style="--bc:#1e5f8a">ST</span>
+              <span class="drop__text"><span class="drop__name">Southern Transport</span><span class="drop__meta">Freight · Logistics · Public Transport</span></span>
+              <span class="drop__year">2023</span>
+            </a>
+            <a href="solar-power.html" class="drop__link" role="menuitem">
+              <span class="drop__badge" style="--bc:#b85c20">SSP</span>
+              <span class="drop__text"><span class="drop__name">Southern Solar Power</span><span class="drop__meta">Solar Energy · Panel Sales · O&amp;M</span></span>
+              <span class="drop__year">2026</span>
+            </a>
+            <a href="southern-realtors.html" class="drop__link" role="menuitem">
+              <span class="drop__badge" style="--bc:#7b2d2d">SR</span>
+              <span class="drop__text"><span class="drop__name">Southern Realtors</span><span class="drop__meta">Land · Properties · Real Estate</span></span>
+            </a>
+          </div>
+        </div>
+        <a href="index.html#leadership" class="nav__a">Leadership</a>
+        <a href="index.html#contact" class="nav__a nav__a--cta">Contact Us</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="drawer" id="drawer">
+      <a href="index.html" class="nav__a">Home</a>
+      <a href="index.html#about" class="nav__a">About</a>
+      <div class="drawer__grp">
+        <button class="nav__a drawer__grp-btn" id="drawerDropBtn">Companies <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="drawer__sub" id="drawerSub">
+          <a href="sarnith.html"               class="nav__a drawer__sub-a">Sarnith Enterprises India Pvt Ltd</a>
+          <a href="southern-enterprises.html"   class="nav__a drawer__sub-a">Southern Enterprises</a>
+          <a href="wind-power.html"             class="nav__a drawer__sub-a">Southern Wind Power India Pvt Ltd</a>
+          <a href="transport.html"              class="nav__a drawer__sub-a">Southern Transport India Pvt Ltd</a>
+          <a href="solar-power.html"            class="nav__a drawer__sub-a">Southern Solar Power India Pvt Ltd</a>
+          <a href="southern-realtors.html"      class="nav__a drawer__sub-a">Southern Realtors</a>
+        </div>
+      </div>
+      <a href="index.html#leadership" class="nav__a">Leadership</a>
+      <a href="index.html#contact"    class="nav__a">Contact Us</a>
+    </div>
+  </header>
+
+
+  <!-- ======================================================
+       HERO
+  ====================================================== -->
+  <section class="co-pg-hero co-pg-hero--realtors">
+    <div class="co-pg-hero__stripe" style="background: var(--c6);"></div>
+    <div class="co-pg-hero__wm">SR</div>
+    <div class="wrap co-pg-hero__inner">
+      <nav class="breadcrumb fade-up">
+        <a href="index.html">Southern Group</a>
+        <span class="breadcrumb__sep">/</span>
+        <span class="breadcrumb__cur">Southern Realtors</span>
+      </nav>
+      <div class="co-pg-hero__logo fade-up" style="background:rgba(123,45,45,0.22);border-color:rgba(123,45,45,0.5);color:var(--c6);">SR</div>
+      <h1 class="fade-up">Southern Realtors</h1>
+      <p class="co-pg-hero__tagline fade-up">"Where Every Plot Tells a Story. Where Every Property Builds a Future."</p>
+      <div class="co-pg-hero__facts fade-up">
+        <div class="co-pg-hero__fact"><span class="cpf-label">Sector</span><span class="cpf-value">Real Estate · Land &amp; Property</span></div>
+        <div class="co-pg-hero__fact"><span class="cpf-label">Focus</span><span class="cpf-value">Tamil Nadu &amp; Kerala</span></div>
+        <div class="co-pg-hero__fact"><span class="cpf-label">Reach</span><span class="cpf-value">South India</span></div>
+        <div class="co-pg-hero__fact"><span class="cpf-label">Email</span><span class="cpf-value"><a href="mailto:southernrealtors23@gmail.com" style="color:inherit;">southernrealtors23@gmail.com</a></span></div>
+      </div>
+      <div class="hero__btns fade-up">
+        <a href="#overview" class="btn btn--dark">Explore Company</a>
+        <a href="index.html" class="btn btn--outline">Back to Group</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       OVERVIEW
+  ====================================================== -->
+  <section class="co-section" id="overview">
+    <div class="wrap">
+      <div class="co-2col">
+        <div>
+          <p class="eyebrow fade-up">South India's Trusted Real Estate Partner</p>
+          <h2 class="h2 fade-up">Where Land Becomes<br /><em>Opportunity</em></h2>
+          <p class="co-body fade-up">Southern Realtors is the real estate vertical of the Southern Group of Companies — a dedicated property business built to serve buyers, investors, and landowners across Tamil Nadu and Kerala. We specialise in the sale of residential plots, commercial properties, agricultural land, and premium villa sites, backed by the trust and institutional strength of the Southern Group.</p>
+          <p class="co-body fade-up">At Southern Realtors, we believe that buying land or property is one of the most significant decisions a person or business will ever make. Our role is to make that decision simple, transparent, and rewarding — by offering verified listings, honest guidance, full documentation support, and site visits that give every client the confidence to invest with clarity.</p>
+          <p class="co-body fade-up">We operate across South India's fastest-growing property corridors — from Chennai's suburban expansion zones and Coimbatore's industrial and residential growth belts to Kerala's coastal and highland property markets. Whether you are a first-time plot buyer, a seasoned investor, or a business seeking commercial land, Southern Realtors is the partner that delivers.</p>
+          <div class="about__tags fade-up" style="margin-top:1rem;">
+            <span class="tag">Residential Plots</span>
+            <span class="tag">Commercial Property</span>
+            <span class="tag">Agricultural Land</span>
+            <span class="tag">Villa Plots</span>
+            <span class="tag">Tamil Nadu</span>
+            <span class="tag">Kerala</span>
+            <span class="tag">Verified Listings</span>
+            <span class="tag">Documentation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       MARKET CONTEXT
+  ====================================================== -->
+  <section class="co-section co-section--alt" id="sector">
+    <div class="wrap">
+      <div class="section-head" style="text-align:center; margin-bottom:3rem;">
+        <p class="eyebrow fade-up">Market Context</p>
+        <h2 class="h2 fade-up">South India's Real Estate<br /><em>Opportunity</em></h2>
+        <p class="section-desc fade-up">India's real estate sector is one of the fastest growing in the world — and South India is at the centre of this transformation. Southern Realtors is positioned to serve buyers and investors as demand for land and property surges across Tamil Nadu and Kerala.</p>
+      </div>
+      <div class="opp-grid">
+        <div class="opp-card fade-up">
+          <span class="opp-card__n">₹13T</span>
+          <h4>India Real Estate Market by 2030</h4>
+          <p>India's real estate sector is projected to reach ₹13 trillion by 2030, contributing 13% of GDP. Residential and commercial demand is accelerating across Tier 1 and Tier 2 cities — with South India capturing a disproportionate share of investment due to its stable governance, infrastructure push, and industrial growth.</p>
+          <span class="opp-card__src">Source: NAREDCO / Knight Frank India, 2025</span>
+        </div>
+        <div class="opp-card fade-up">
+          <span class="opp-card__n">18%</span>
+          <h4>Growth in Tamil Nadu Property Registrations</h4>
+          <p>Tamil Nadu recorded an 18% year-on-year increase in property registrations in 2024, driven by infrastructure projects, IT corridor expansion in Chennai, and growing industrial zones in Coimbatore, Hosur, and Tirupur. Residential plots and commercial sites are among the highest-demand categories.</p>
+          <span class="opp-card__src">Source: Tamil Nadu Registration Department, 2024</span>
+        </div>
+        <div class="opp-card fade-up">
+          <span class="opp-card__n">22%</span>
+          <h4>Kerala Real Estate Appreciation Rate</h4>
+          <p>Kerala's property market saw average appreciation of 22% in 2024, driven by Non-Resident Indian (NRI) investment, Kochi's smart city transformation, and growing demand for premium villas and gated community plots. Agricultural and plantation land in Kerala's highlands also commands strong and growing premiums.</p>
+          <span class="opp-card__src">Source: Kerala RERA / PropTiger Research, 2024</span>
+        </div>
+        <div class="opp-card fade-up">
+          <span class="opp-card__n">₹2.4L Cr</span>
+          <h4>Infrastructure Investment Driving South India Land Demand</h4>
+          <p>Over ₹2.4 lakh crore of infrastructure projects — highways, metro rail, industrial corridors, and logistics parks — are under development across Tamil Nadu and Kerala. Every major infrastructure announcement directly stimulates demand for adjacent land and commercial real estate, creating durable long-term value for landowners and investors.</p>
+          <span class="opp-card__src">Source: Ministry of Road Transport / NITI Aayog, 2025</span>
+        </div>
+      </div>
+      <div class="fade-up" style="margin-top:2.5rem;">
+        <p class="eyebrow" style="text-align:center; margin-bottom:1rem;">Key Growth Drivers</p>
+        <div class="about__tags" style="justify-content:center;">
+          <span class="tag">Smart Cities Mission</span>
+          <span class="tag">Industrial Corridor Development</span>
+          <span class="tag">NRI Investment</span>
+          <span class="tag">Infrastructure Push</span>
+          <span class="tag">RERA Compliance</span>
+          <span class="tag">IT &amp; Manufacturing Expansion</span>
+          <span class="tag">Metro Rail Projects</span>
+          <span class="tag">Tourism &amp; Hospitality</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       PROPERTY TYPES
+  ====================================================== -->
+  <section class="co-section">
+    <div class="wrap">
+      <p class="eyebrow fade-up" style="text-align:center;">What We Deal In</p>
+      <h2 class="h2 fade-up" style="text-align:center;">Four Property Verticals,<br /><em>One Trusted Name</em></h2>
+      <div class="synergy__grid" style="margin-top:3rem;">
+
+        <div class="syn-card fade-up">
+          <p class="eyebrow" style="margin-bottom:0.5rem;">Residential Plots</p>
+          <h4 style="font-family:var(--serif);font-size:1.4rem;font-weight:300;line-height:1.3;margin-bottom:1rem;">Plots Built for <em>Homes &amp; Futures</em></h4>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(82px,1fr));gap:0.6rem;margin-bottom:1.25rem;">
+            <div style="background:var(--off-white);border:1px solid var(--border);border-radius:6px;padding:0.75rem;text-align:center;">
+              <div style="font-family:var(--serif);font-size:1.4rem;color:var(--c6);font-weight:300;">DTCP</div>
+              <div style="font-size:0.65rem;color:var(--muted);margin-top:0.25rem;line-height:1.4;">Approved layouts with clear title</div>
+            </div>
+            <div style="background:var(--off-white);border:1px solid var(--border);border-radius:6px;padding:0.75rem;text-align:center;">
+              <div style="font-family:var(--serif);font-size:1.4rem;color:var(--c6);font-weight:300;">600+</div>
+              <div style="font-size:0.65rem;color:var(--muted);margin-top:0.25rem;line-height:1.4;">Sq ft starting size for residential plots</div>
+            </div>
+            <div style="background:var(--off-white);border:1px solid var(--border);border-radius:6px;padding:0.75rem;text-align:center;">
+              <div style="font-family:var(--serif);font-size:1.4rem;color:var(--c6);font-weight:300;">EMI</div>
+              <div style="font-size:0.65rem;color:var(--muted);margin-top:0.25rem;line-height:1.4;">Flexible payment plans available</div>
+            </div>
+          </div>
+          <p style="font-size:0.875rem;line-height:1.7;margin-bottom:1rem;">We offer DTCP and RERA-approved residential plots in and around Chennai, Coimbatore, Madurai, Trichy, Kochi, and Thiruvananthapuram — covering suburbs, growth corridors, and newly developing residential zones. Every plot we list undergoes title verification before it reaches a buyer.</p>
+          <div class="about__tags">
+            <span class="tag">DTCP Approved</span>
+            <span class="tag">Gated Layouts</span>
+            <span class="tag">Panchayat Plots</span>
+            <span class="tag">Corporation Limits</span>
+          </div>
+        </div>
+
+        <div class="syn-card fade-up">
+          <p class="eyebrow" style="margin-bottom:0.5rem;">Commercial Properties</p>
+          <h4 style="font-family:var(--serif);font-size:1.4rem;font-weight:300;line-height:1.3;margin-bottom:1rem;">Spaces Built for <em>Business &amp; Growth</em></h4>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(82px,1fr));gap:0.6rem;margin-bottom:1.25rem;">
+            <div style="background:var(--off-white);border:1px solid var(--border);border-radius:6px;padding:0.75rem;text-align:center;">
+              <div style="font-family:var(--serif);font-size:1.4rem;color:var(--c6);font-weight:300;">NH</div>
+              <div style="font-size:0.65rem;color:var(--muted);margin-top:0.25rem;line-height:1.4;">Highway-facing commercial land parcels</div>
+            </div>
+            <div style="background:var(--off-white);border:1px solid var(--border);border-radius:6px;padding:0.75rem;text-align:center;">
+              <div style="font-family:var(--serif);font-size:1.4rem;color:var(--c6);font-weight:300;">IT</div>
+              <div style="font-size:0.65rem;color:var(--muted);margin-top:0.25rem;line-height:1.4;">Office and tech park adjacent sites</div>
+            </div>
+            <div style="background:var(--off-white);border:1px solid var(--border);border-radius:6px;padding:0.75rem;text-align:center;">
+              <div style="font-family:var(--serif);font-size:1.4rem;color:var(--c6);font-weight:300;">CRE</div>
+              <div style="font-size:0.65rem;color:var(--muted);margin-top:0.25rem;line-height:1.4;">Commercial real estate for all business types</div>
+            </div>
+          </div>
+          <p style="font-size:0.875rem;line-height:1.7;margin-bottom:1rem;">From highway-facing commercial land and industrial shed sites to office buildings, showroom spaces, and retail properties — Southern Realtors lists verified commercial real estate across South India's major business districts and emerging corridors. We serve entrepreneurs, corporates, and institutional buyers with equal priority.</p>
+          <div class="about__tags">
+            <span class="tag">Industrial Land</span>
+            <span class="tag">Showroom Sites</span>
+            <span class="tag">Office Buildings</span>
+            <span class="tag">Highway Plots</span>
+          </div>
+        </div>
+
+        <div class="syn-card fade-up">
+          <p class="eyebrow" style="margin-bottom:0.5rem;">Agricultural Land</p>
+          <h4 style="font-family:var(--serif);font-size:1.4rem;font-weight:300;line-height:1.3;margin-bottom:1rem;">Farmland for <em>Investment &amp; Cultivation</em></h4>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(82px,1fr));gap:0.6rem;margin-bottom:1.25rem;">
+            <div style="background:var(--off-white);border:1px solid var(--border);border-radius:6px;padding:0.75rem;text-align:center;">
+              <div style="font-family:var(--serif);font-size:1.4rem;color:var(--c6);font-weight:300;">Acre+</div>
+              <div style="font-size:0.65rem;color:var(--muted);margin-top:0.25rem;line-height:1.4;">Agricultural parcels from 1 acre and above</div>
+            </div>
+            <div style="background:var(--off-white);border:1px solid var(--border);border-radius:6px;padding:0.75rem;text-align:center;">
+              <div style="font-family:var(--serif);font-size:1.4rem;color:var(--c6);font-weight:300;">Patta</div>
+              <div style="font-size:0.65rem;color:var(--muted);margin-top:0.25rem;line-height:1.4;">Clear patta documents verified before listing</div>
+            </div>
+            <div style="background:var(--off-white);border:1px solid var(--border);border-radius:6px;padding:0.75rem;text-align:center;">
+              <div style="font-family:var(--serif);font-size:1.4rem;color:var(--c6);font-weight:300;">TN &amp; KL</div>
+              <div style="font-size:0.65rem;color:var(--muted);margin-top:0.25rem;line-height:1.4;">Farmland in Tamil Nadu and Kerala</div>
+            </div>
+          </div>
+          <p style="font-size:0.875rem;line-height:1.7;margin-bottom:1rem;">Agricultural land in Tamil Nadu and Kerala represents one of the most durable long-term investments available. Southern Realtors lists verified farmland parcels — paddy fields, mango and banana orchards, coconut groves, and dry farmland — with full patta verification and encumbrance certificate checks before any listing goes live.</p>
+          <div class="about__tags">
+            <span class="tag">Paddy Fields</span>
+            <span class="tag">Orchards</span>
+            <span class="tag">Coconut Groves</span>
+            <span class="tag">Dry &amp; Wet Land</span>
+          </div>
+        </div>
+
+        <div class="syn-card fade-up">
+          <p class="eyebrow" style="margin-bottom:0.5rem;">Villa Plots &amp; Premium Sites</p>
+          <h4 style="font-family:var(--serif);font-size:1.4rem;font-weight:300;line-height:1.3;margin-bottom:1rem;">Premium Land for <em>Discerning Buyers</em></h4>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(82px,1fr));gap:0.6rem;margin-bottom:1.25rem;">
+            <div style="background:var(--off-white);border:1px solid var(--border);border-radius:6px;padding:0.75rem;text-align:center;">
+              <div style="font-family:var(--serif);font-size:1.4rem;color:var(--c6);font-weight:300;">Gated</div>
+              <div style="font-size:0.65rem;color:var(--muted);margin-top:0.25rem;line-height:1.4;">Premium gated community villa plots</div>
+            </div>
+            <div style="background:var(--off-white);border:1px solid var(--border);border-radius:6px;padding:0.75rem;text-align:center;">
+              <div style="font-family:var(--serif);font-size:1.4rem;color:var(--c6);font-weight:300;">2400+</div>
+              <div style="font-size:0.65rem;color:var(--muted);margin-top:0.25rem;line-height:1.4;">Sq ft premium plot sizes</div>
+            </div>
+            <div style="background:var(--off-white);border:1px solid var(--border);border-radius:6px;padding:0.75rem;text-align:center;">
+              <div style="font-family:var(--serif);font-size:1.4rem;color:var(--c6);font-weight:300;">EC</div>
+              <div style="font-size:0.65rem;color:var(--muted);margin-top:0.25rem;line-height:1.4;">Encumbrance-free title guarantee</div>
+            </div>
+          </div>
+          <p style="font-size:0.875rem;line-height:1.7;margin-bottom:1rem;">We curate premium villa plots in gated developments, hilltop sites, and lakeside locations across Tamil Nadu and Kerala for buyers who demand more than a standard layout. These plots are selected for location quality, natural setting, connectivity, and long-term appreciation potential — and come with all amenities, legal clearances, and bank loan eligibility.</p>
+          <div class="about__tags">
+            <span class="tag">Gated Community</span>
+            <span class="tag">Hilltop Sites</span>
+            <span class="tag">Lakeside Plots</span>
+            <span class="tag">Bank Loan Eligible</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       SERVICES
+  ====================================================== -->
+  <section class="co-section co-section--alt" id="services">
+    <div class="wrap">
+      <p class="eyebrow fade-up" style="text-align:center;">What We Do</p>
+      <h2 class="h2 fade-up" style="text-align:center;">Our<br /><em>Services</em></h2>
+      <div class="activities-grid" style="margin-top:3rem;">
+
+        <div class="act-card fade-up">
+          <div class="act-card__num">01</div>
+          <h4>Land &amp; Plot Sales</h4>
+          <p>We sell residential plots, commercial land, agricultural land, and villa sites across Tamil Nadu and Kerala. Every listing is physically verified, title-checked, and encumbrance-confirmed before it is offered to a buyer — ensuring complete peace of mind with every transaction.</p>
+        </div>
+
+        <div class="act-card fade-up">
+          <div class="act-card__num">02</div>
+          <h4>Residential Property Sales</h4>
+          <p>Beyond raw land, we assist buyers in identifying and purchasing independent houses, villas, and builder-floor apartments across South India's key residential markets — including Chennai, Coimbatore, Madurai, Kochi, and Thiruvananthapuram.</p>
+        </div>
+
+        <div class="act-card fade-up">
+          <div class="act-card__num">03</div>
+          <h4>Commercial Property Sales</h4>
+          <p>We source and sell commercial properties for businesses of all sizes — from small showroom sites along arterial roads to large-format industrial plots, warehouse land, and office building sales. Our commercial portfolio is spread across South India's most active business corridors.</p>
+        </div>
+
+        <div class="act-card fade-up">
+          <div class="act-card__num">04</div>
+          <h4>Agricultural Land Trading</h4>
+          <p>We specialise in the verified sale and purchase of agricultural land across Tamil Nadu and Kerala. Our team handles all patta, chitta, and adangal verification, ensuring buyers receive clear-title farmland with full legal standing and zero encumbrances.</p>
+        </div>
+
+        <div class="act-card fade-up">
+          <div class="act-card__num">05</div>
+          <h4>Property Consultation &amp; Advisory</h4>
+          <p>Our experienced property advisors guide buyers through every decision — from selecting the right location and property type, to evaluating market value, understanding local regulations, and timing the purchase correctly. We make complex property decisions straightforward and well-informed.</p>
+        </div>
+
+        <div class="act-card fade-up">
+          <div class="act-card__num">06</div>
+          <h4>Site Visits &amp; Property Assessment</h4>
+          <p>We organise and accompany buyers on physical site visits to every property we list. Our team provides an honest, on-ground assessment of the site's topography, access roads, neighbouring developments, water availability, and surrounding infrastructure — giving buyers a complete picture before they commit.</p>
+        </div>
+
+        <div class="act-card fade-up">
+          <div class="act-card__num">07</div>
+          <h4>Documentation &amp; Legal Assistance</h4>
+          <p>From title deed verification and encumbrance certificate checks to sale agreement drafting, registration at the sub-registrar office, and post-purchase mutation — Southern Realtors assists clients through the complete documentation journey. We work with trusted legal partners to ensure every transaction is watertight.</p>
+        </div>
+
+        <div class="act-card fade-up">
+          <div class="act-card__num">08</div>
+          <h4>Property Management</h4>
+          <p>For investors and NRI clients who own property in South India but are not present to manage it, Southern Realtors offers property management services — covering periodic inspection, maintenance coordination, tenant management, revenue collection, and title update support.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       WHY CHOOSE US
+  ====================================================== -->
+  <section class="co-section" id="why-us">
+    <div class="wrap">
+      <p class="eyebrow fade-up" style="text-align:center;">Why Choose Us</p>
+      <h2 class="h2 fade-up" style="text-align:center;">Trust, Transparency,<br /><em>and Local Expertise</em></h2>
+      <div class="synergy__grid" style="margin-top:3rem;">
+
+        <div class="syn-card fade-up">
+          <p class="eyebrow" style="margin-bottom:0.5rem;color:var(--c6);">Verified Listings Only</p>
+          <p>Every property we list has been physically inspected and legally verified — title deeds checked, encumbrances confirmed, layout approvals validated. We do not list unverified properties. This saves buyers time, money, and the risk of legal complications after purchase.</p>
+        </div>
+
+        <div class="syn-card fade-up">
+          <p class="eyebrow" style="margin-bottom:0.5rem;color:var(--c6);">Southern Group Backing</p>
+          <p>Southern Realtors operates under the institutional umbrella of the Southern Group of Companies — a conglomerate with a decade-long track record across scrap trading, clean energy, and logistics. Clients deal with a group that has an established reputation for compliance, transparency, and ethical business.</p>
+        </div>
+
+        <div class="syn-card fade-up">
+          <p class="eyebrow" style="margin-bottom:0.5rem;color:var(--c6);">Deep Local Knowledge</p>
+          <p>Our team has granular knowledge of property markets across Tamil Nadu and Kerala — including micro-market pricing, development pipeline, local government norms, and upcoming infrastructure that will drive land value. We advise clients based on genuine on-ground insight, not just listed rates.</p>
+        </div>
+
+        <div class="syn-card fade-up">
+          <p class="eyebrow" style="margin-bottom:0.5rem;color:var(--c6);">End-to-End Support</p>
+          <p>From the first property shortlist to the final registration stamp at the sub-registrar, Southern Realtors accompanies every client through the complete transaction. We are not a referral service — we are an end-to-end property partner who stays involved until the deal is fully closed.</p>
+        </div>
+
+        <div class="syn-card fade-up">
+          <p class="eyebrow" style="margin-bottom:0.5rem;color:var(--c6);">Transparent Pricing</p>
+          <p>We provide honest market valuations and transparent fee structures. Clients always know exactly what they are paying for the property and what our service fees cover. There are no hidden charges, no last-minute add-ons, and no pressure tactics — only straightforward, ethical transactions.</p>
+        </div>
+
+        <div class="syn-card fade-up">
+          <p class="eyebrow" style="margin-bottom:0.5rem;color:var(--c6);">NRI-Friendly Services</p>
+          <p>We have significant experience assisting Non-Resident Indians in purchasing, managing, and selling property in Tamil Nadu and Kerala. We handle documentation remotely, coordinate Power of Attorney arrangements, and provide regular updates — making the process seamless for clients based outside India.</p>
+        </div>
+
+        <div class="syn-card fade-up">
+          <p class="eyebrow" style="margin-bottom:0.5rem;color:var(--c6);">Loan Liaison Support</p>
+          <p>We work alongside leading nationalised and private banks to facilitate home loans and land purchase loans for eligible buyers. Our team helps clients understand their eligibility, prepare documentation, and navigate the loan approval process — making property ownership accessible and financially structured.</p>
+        </div>
+
+        <div class="syn-card fade-up">
+          <p class="eyebrow" style="margin-bottom:0.5rem;color:var(--c6);">Long-Term Investor Focus</p>
+          <p>We do not just sell a property — we help clients build a long-term real estate portfolio. Our advisory team tracks land appreciation trends, upcoming development zones, and infrastructure announcements to help investors enter the right markets at the right time.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       OUR REACH
+  ====================================================== -->
+  <section class="co-section co-section--alt" id="reach">
+    <div class="wrap">
+      <p class="eyebrow fade-up" style="text-align:center;">Our Coverage</p>
+      <h2 class="h2 fade-up" style="text-align:center;">South India's Key<br /><em>Property Markets</em></h2>
+      <p class="section-desc fade-up" style="text-align:center;max-width:600px;margin-inline:auto;margin-bottom:3rem;">Southern Realtors covers the most active and high-growth property markets across Tamil Nadu and Kerala — from metropolitan suburbs to emerging inland corridors and coastal sites.</p>
+      <div class="activities-grid">
+
+        <div class="act-card fade-up">
+          <div class="act-card__num" style="font-size:0.75rem;letter-spacing:0.08em;">CHENNAI</div>
+          <h4>Chennai &amp; Suburbs</h4>
+          <p>OMR, ECR, GST Road, Tambaram, Perumbakkam, Kelambakkam, Oragadam, and Sriperumbudur — covering Chennai's vast suburban and IT corridor expansion zones, where residential and commercial plot demand remains consistently high.</p>
+        </div>
+
+        <div class="act-card fade-up">
+          <div class="act-card__num" style="font-size:0.75rem;letter-spacing:0.08em;">COIMBATORE</div>
+          <h4>Coimbatore &amp; Region</h4>
+          <p>Coimbatore's industrial belts and residential growth zones — including Saravanampatti, Singanallur, Thudiyalur, and Mettupalayam Road — where expanding MSME clusters and a growing professional population drive sustained demand for plots and commercial land.</p>
+        </div>
+
+        <div class="act-card fade-up">
+          <div class="act-card__num" style="font-size:0.75rem;letter-spacing:0.08em;">INTERIOR TN</div>
+          <h4>Interior Tamil Nadu</h4>
+          <p>Madurai, Trichy, Salem, Tirupur, and Dindigul — secondary cities undergoing rapid urbanisation and infrastructure investment, offering high-value land opportunities at competitive entry prices for long-term investors and first-time buyers alike.</p>
+        </div>
+
+        <div class="act-card fade-up">
+          <div class="act-card__num" style="font-size:0.75rem;letter-spacing:0.08em;">KERALA</div>
+          <h4>Kerala</h4>
+          <p>Kochi, Thiruvananthapuram, Thrissur, Kozhikode, and the highland districts — serving Kerala's premium residential and NRI property market, with expertise in coastal plots, plantation land, and gated villa site development in this high-appreciation market.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       VALUES / COMMITMENT
+  ====================================================== -->
+  <section class="co-section">
+    <div class="wrap">
+      <p class="eyebrow fade-up" style="text-align:center;">Our Commitment</p>
+      <h2 class="h2 fade-up" style="text-align:center;">The Principles Behind<br /><em>Every Transaction</em></h2>
+      <p class="section-desc fade-up" style="text-align:center;max-width:600px;margin-inline:auto;margin-bottom:3rem;">At Southern Realtors, a transaction is never just a sale. It is a life-changing commitment our client is making — and we treat it with the seriousness it deserves.</p>
+      <div class="values__grid" style="margin-top:2rem;">
+        <div style="display:contents;"><!-- spacer --></div>
+        <div class="values__cards" style="grid-column:1/-1;">
+          <div class="val-card fade-up">
+            <span class="val-card__n">T</span>
+            <h4>Transparency</h4>
+            <p>Complete honesty in every listing, every valuation, and every fee. Clients receive accurate information — not what they want to hear, but what they need to know to make a sound decision.</p>
+          </div>
+          <div class="val-card fade-up">
+            <span class="val-card__n">V</span>
+            <h4>Verification</h4>
+            <p>No listing goes live without title verification, encumbrance check, and physical site inspection. Our clients never inherit legal surprises because we do the work before the listing, not after the sale.</p>
+          </div>
+          <div class="val-card fade-up">
+            <span class="val-card__n">E</span>
+            <h4>Expertise</h4>
+            <p>Genuine, on-ground knowledge of South Indian property markets — pricing trends, micro-market dynamics, regulatory changes, and infrastructure developments — applied to every client advisory.</p>
+          </div>
+          <div class="val-card fade-up">
+            <span class="val-card__n">C</span>
+            <h4>Care</h4>
+            <p>Property purchase is one of the largest financial decisions in a person's life. We treat every client's investment with the same care and diligence we would apply to our own — because long-term trust matters more than short-term commissions.</p>
+          </div>
+          <div class="val-card fade-up">
+            <span class="val-card__n">I</span>
+            <h4>Integrity</h4>
+            <p>We will not recommend a property we would not buy ourselves. We will not misrepresent a price, a legal status, or a market condition. At Southern Realtors, integrity is non-negotiable at every step of every deal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       LEADERSHIP
+  ====================================================== -->
+  <section class="co-section co-section--alt">
+    <div class="wrap">
+      <p class="eyebrow fade-up" style="text-align:center;">Board of Directors</p>
+      <h2 class="h2 fade-up" style="text-align:center;">Leadership<br /><em>Team</em></h2>
+      <div class="co-leaders">
+        <div class="leader fade-up">
+          <div class="leader__avatar leader__avatar--1">GS</div>
+          <div class="leader__body">
+            <h4 class="leader__name">Ganesan Saravanakumar</h4>
+            <p class="leader__role">Founder &amp; Group Managing Director</p>
+            <p class="leader__desc">Principal founder of the Southern Group and the driving vision behind Southern Realtors. With over a decade of experience building and scaling businesses across South India — in scrap trading, energy, and logistics — he brings strategic depth, regional network, and entrepreneurial conviction to the real estate vertical. He oversees the Group's entry into real estate as a natural extension of its diversified growth strategy across Tamil Nadu and Kerala.</p>
+          </div>
+        </div>
+        <div class="leader fade-up">
+          <div class="leader__avatar leader__avatar--2">NK</div>
+          <div class="leader__body">
+            <h4 class="leader__name">Krishnan Nithya</h4>
+            <p class="leader__role">Director &amp; Co-Founder</p>
+            <p class="leader__desc">Co-founder and director across all Southern Group companies, including Southern Realtors. Her expertise in corporate governance, legal compliance, and institutional structure ensures that Southern Realtors operates to the highest standards of regulatory adherence and client accountability — from RERA compliance to documentation integrity on every property transaction.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       OTHER COMPANIES
+  ====================================================== -->
+  <section class="co-section">
+    <div class="wrap">
+      <p class="eyebrow fade-up" style="text-align:center;">Southern Group Portfolio</p>
+      <h2 class="h2 fade-up" style="text-align:center;">Explore Other<br /><em>Companies</em></h2>
+      <div class="other-cos">
+        <a href="sarnith.html" class="other-co-card fade-up">
+          <span class="drop__badge" style="--bc:#8b6914">SE</span>
+          <span class="drop__text"><span class="drop__name">Sarnith Enterprises India Pvt Ltd</span><span class="drop__meta">Aluminum Scrap · Iron Scrap · Est. 2015</span></span>
+        </a>
+        <a href="southern-enterprises.html" class="other-co-card fade-up">
+          <span class="drop__badge" style="--bc:#607585">SEN</span>
+          <span class="drop__text"><span class="drop__name">Southern Enterprises</span><span class="drop__meta">Iron &amp; Aluminum · Product Trading</span></span>
+        </a>
+        <a href="wind-power.html" class="other-co-card fade-up">
+          <span class="drop__badge" style="--bc:#2d7a5a">SWP</span>
+          <span class="drop__text"><span class="drop__name">Southern Wind Power India Pvt Ltd</span><span class="drop__meta">Wind Energy · Windmill Operations · Est. 2022</span></span>
+        </a>
+        <a href="transport.html" class="other-co-card fade-up">
+          <span class="drop__badge" style="--bc:#1e5f8a">ST</span>
+          <span class="drop__text"><span class="drop__name">Southern Transport India Pvt Ltd</span><span class="drop__meta">Freight · Logistics · Public Transport · Est. 2023</span></span>
+        </a>
+        <a href="solar-power.html" class="other-co-card fade-up">
+          <span class="drop__badge" style="--bc:#b85c20">SSP</span>
+          <span class="drop__text"><span class="drop__name">Southern Solar Power India Pvt Ltd</span><span class="drop__meta">Solar Energy · Panel Sales · O&amp;M · Est. 2026</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="logo logo--footer"><img class="logo__img logo__img--footer" src="logo.PNG" alt="Southern Group of Companies" /></a>
+          <p class="footer__tagline">Building India's sustainable tomorrow through diversified excellence.</p>
+        </div>
+        <div class="footer__cols">
+          <div class="footer__col"><h5>Our Companies</h5><ul>
+            <li><a href="sarnith.html">Sarnith Enterprises India Pvt Ltd</a></li>
+            <li><a href="southern-enterprises.html">Southern Enterprises</a></li>
+            <li><a href="wind-power.html">Southern Wind Power India Pvt Ltd</a></li>
+            <li><a href="transport.html">Southern Transport India Pvt Ltd</a></li>
+            <li><a href="solar-power.html">Southern Solar Power India Pvt Ltd</a></li>
+            <li><a href="southern-realtors.html">Southern Realtors</a></li>
+          </ul></div>
+          <div class="footer__col"><h5>Navigate</h5><ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#leadership">Leadership</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul></div>
+          <div class="footer__col"><h5>Sectors</h5><ul>
+            <li>Scrap Trading</li>
+            <li>Renewable Energy</li>
+            <li>Logistics &amp; Transport</li>
+            <li>Metals &amp; Commodities</li>
+            <li>Real Estate</li>
+          </ul></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Southern Group of Companies. All rights reserved.</p>
+        <p>Group Offices: Chennai &amp; Coimbatore, Tamil Nadu &nbsp;&middot;&nbsp; Kochi, Kerala, India</p>
+        <p class="footer__powered">Powered by <a href="https://thearktech.in" target="_blank" rel="noopener noreferrer">thearktech.in</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>

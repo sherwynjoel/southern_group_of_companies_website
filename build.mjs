@@ -41,7 +41,7 @@ fs.mkdirSync(path.join(DIST, 'js'), { recursive: true });
 run(`npx terser "${path.join(SRC, 'js', 'main.js')}" -o "${path.join(DIST, 'js', 'main.js')}" --compress --mangle`);
 
 /* ── HTML pages ── */
-const HTML_FILES = ['index.html', 'sarnith.html', 'southern-enterprises.html', 'wind-power.html', 'transport.html', 'solar-power.html'];
+const HTML_FILES = ['index.html', 'sarnith.html', 'southern-enterprises.html', 'wind-power.html', 'transport.html', 'solar-power.html', 'southern-realtors.html'];
 const HTML_OPTS  = [
   '--collapse-whitespace',
   '--remove-comments',
@@ -63,7 +63,20 @@ for (const file of HTML_FILES) {
 
 /* ── Assets ── */
 console.log('🖼   Copying assets');
-copy(path.join(SRC, 'logo.png.jpeg'), path.join(DIST, 'logo.png.jpeg'));
+copy(path.join(SRC, 'logo.PNG'), path.join(DIST, 'logo.PNG'));
+
+// Copy company hero images to dist/assets/
+const HERO_IMAGES = [
+  'sarnith_hero.png',
+  'enterprises_hero.png',
+  'wind_hero.png',
+  'transport_hero.png',
+  'solar_hero.png',
+  'realtors_hero.png'
+];
+for (const img of HERO_IMAGES) {
+  copy(path.join(SRC, 'assets', img), path.join(DIST, 'assets', img));
+}
 
 /* ── Report ── */
 console.log('\n✅  Build complete → dist/\n');

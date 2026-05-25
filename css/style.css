@@ -28,6 +28,7 @@
   --c3: #1e5f8a;   /* Transport — blue */
   --c4: #b85c20;   /* Solar — burnt orange */
   --c5: #607585;   /* Southern Enterprises — steel grey */
+  --c6: #7b2d2d;   /* Southern Realtors — estate crimson */
 
   /* Typography */
   --serif: 'Cormorant Garamond', Georgia, serif;
@@ -613,24 +614,33 @@ img { display: block; max-width: 100%; }
   background: rgba(255,255,255,0.03);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
+  overflow: hidden;
 }
 .hero__cos-inner {
-  max-width: var(--wrap);
-  margin: 0 auto;
-  padding: 0 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1px 1fr 1px 1fr 1px 1fr;
+  display: flex;
   align-items: stretch;
+  width: max-content;
+  animation: co-ticker 32s linear infinite;
+}
+.hero__cos-bar:hover .hero__cos-inner {
+  animation-play-state: paused;
+}
+@keyframes co-ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 .hero__cos-div {
   background: rgba(184,147,90,0.15);
   width: 1px;
+  flex-shrink: 0;
+  align-self: stretch;
 }
 .hero__co {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   padding: 0.875rem 1.25rem;
+  flex-shrink: 0;
   transition: background 0.2s var(--ease);
   cursor: pointer;
 }
@@ -1650,9 +1660,6 @@ img { display: block; max-width: 100%; }
 /* ── Tablet (≤1024px) ── */
 @media (max-width: 1024px) {
   .hero__scroll-hint { display: none; }
-  .hero__cos-inner { grid-template-columns: 1fr 1px 1fr 1px 1fr; }
-  .hero__cos-div:last-of-type { display: none; }
-  .hero__co:last-child { display: none; }
   .about__grid { grid-template-columns: 1fr; gap: 3rem; }
   .about__right { max-width: 420px; }
   .values__grid { grid-template-columns: 1fr; gap: 3rem; }
@@ -1683,9 +1690,6 @@ img { display: block; max-width: 100%; }
   .hero__btns  { margin-bottom: 2.5rem; gap: 0.75rem; }
   .hero__stat  { padding: 0.75rem 1.25rem; }
   .hero__stat-n { font-size: 1.75rem; }
-  .hero__cos-inner { grid-template-columns: 1fr 1px 1fr; }
-  .hero__cos-div:nth-of-type(n+3) { display: none; }
-  .hero__co:nth-child(n+4) { display: none; }
 
   /* Company cards */
   .co-card { grid-template-columns: 76px 1fr; }
@@ -2025,10 +2029,43 @@ img { display: block; max-width: 100%; }
 .co-pg-hero {
   padding: calc(var(--hdr-h) + 4.5rem) 0 6rem;
   background: var(--ink);
-  background-image: radial-gradient(rgba(255,255,255,0.025) 1px, transparent 1px);
-  background-size: 28px 28px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
+}
+
+/* Specific company hero background images with premium dark gradients for absolute legibility */
+.co-pg-hero--sarnith {
+  background-image: 
+    linear-gradient(to bottom, rgba(20, 18, 16, 0.82) 0%, rgba(20, 18, 16, 0.94) 100%),
+    url('../assets/sarnith_hero.png');
+}
+.co-pg-hero--enterprises {
+  background-image: 
+    linear-gradient(to bottom, rgba(20, 18, 16, 0.82) 0%, rgba(20, 18, 16, 0.94) 100%),
+    url('../assets/enterprises_hero.png');
+}
+.co-pg-hero--wind {
+  background-image: 
+    linear-gradient(to bottom, rgba(20, 18, 16, 0.82) 0%, rgba(20, 18, 16, 0.94) 100%),
+    url('../assets/wind_hero.png');
+}
+.co-pg-hero--transport {
+  background-image: 
+    linear-gradient(to bottom, rgba(20, 18, 16, 0.82) 0%, rgba(20, 18, 16, 0.94) 100%),
+    url('../assets/transport_hero.png');
+}
+.co-pg-hero--solar {
+  background-image: 
+    linear-gradient(to bottom, rgba(20, 18, 16, 0.82) 0%, rgba(20, 18, 16, 0.94) 100%),
+    url('../assets/solar_hero.png');
+}
+.co-pg-hero--realtors {
+  background-image: 
+    linear-gradient(to bottom, rgba(20, 18, 16, 0.82) 0%, rgba(20, 18, 16, 0.94) 100%),
+    url('../assets/realtors_hero.png');
 }
 
 .co-pg-hero__wm {
