@@ -1356,10 +1356,10 @@ img { display: block; max-width: 100%; }
 .contact__cos {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.2rem;
 }
 
-.contact__cos a {
+.contact__co-link {
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--ink-3);
@@ -1369,7 +1369,7 @@ img { display: block; max-width: 100%; }
   transition: color 0.2s var(--ease);
 }
 
-.contact__cos a::before {
+.contact__co-link::before {
   content: '';
   display: block;
   width: 16px;
@@ -1379,8 +1379,28 @@ img { display: block; max-width: 100%; }
   flex-shrink: 0;
 }
 
-.contact__cos a:hover { color: var(--gold); }
-.contact__cos a:hover::before { width: 24px; }
+.contact__co-link:hover { color: var(--gold); }
+.contact__co-link:hover::before { width: 24px; }
+
+.contact__co-email {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--muted);
+  padding-left: 1.625rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.65rem;
+}
+
+.contact__co-email a {
+  color: var(--ink-2);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s var(--ease);
+}
+
+.contact__co-email a:hover {
+  color: var(--gold);
+}
 
 /* Form */
 .contact__form-wrap {
@@ -1762,11 +1782,7 @@ img { display: block; max-width: 100%; }
   .hero__stat  { flex: 0 0 50%; padding: 0.875rem 1rem; }
   .hero__stat-sep { display: none; }
   .hero__stat-n { font-size: 1.6rem; }
-  .hero__cos-inner { grid-template-columns: 1fr; }
-  .hero__cos-div   { display: none !important; }
-  /* Hero bar is dark — use white-alpha border, not the light --border */
-  .hero__co        { border-bottom: 1px solid rgba(255,255,255,0.1); display: flex !important; }
-  .hero__co:last-child { border-bottom: none; }
+
 
   /* Company cards */
   .co-card         { grid-template-columns: 1fr; }
@@ -2028,7 +2044,7 @@ img { display: block; max-width: 100%; }
 /* Company page hero */
 .co-pg-hero {
   padding: calc(var(--hdr-h) + 4.5rem) 0 6rem;
-  background: var(--ink);
+  background-color: var(--ink);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

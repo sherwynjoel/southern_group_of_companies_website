@@ -150,11 +150,42 @@ const form = document.getElementById('contactForm');
 if (form) {
   form.addEventListener('submit', e => {
     e.preventDefault();
+
+    // 1. Gather all form inputs
+    const nameVal     = document.getElementById('f-name').value.trim();
+    const emailVal    = document.getElementById('f-email').value.trim();
+    const orgVal      = document.getElementById('f-org').value.trim() || 'N/A';
+    const interestSel = document.getElementById('f-interest');
+    const interestVal = interestSel.options[interestSel.selectedIndex] ? interestSel.options[interestSel.selectedIndex].text : 'General Enquiry';
+    const msgVal      = document.getElementById('f-msg').value.trim();
+
+    // 2. Validate required inputs
+    if (!nameVal || !emailVal || !msgVal) {
+      alert('Please fill out all required fields.');
+      return;
+    }
+
+    // 3. Format message professionally
+    const textMsg = `*Southern Group — New Website Enquiry*\n\n` +
+                    `*Name:* ${nameVal}\n` +
+                    `*Email:* ${emailVal}\n` +
+                    `*Organisation:* ${orgVal}\n` +
+                    `*Area of Interest:* ${interestVal}\n\n` +
+                    `*Message:*\n${msgVal}`;
+
+    // 4. Construct WhatsApp API link (+91 95666 47774)
+    const waUrl = `https://wa.me/919566647774?text=${encodeURIComponent(textMsg)}`;
+
+    // 5. Open WhatsApp in new tab
+    window.open(waUrl, '_blank');
+
+    // 6. Visual feedback
     const btn = form.querySelector('button[type="submit"]');
     const original = btn.textContent;
-    btn.textContent = 'Message Sent';
+    btn.textContent = 'Redirecting to WhatsApp...';
     btn.disabled = true;
     btn.style.background = '#2d7a5a';
+
     setTimeout(() => {
       btn.textContent = original;
       btn.disabled = false;
